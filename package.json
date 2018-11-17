@@ -1,0 +1,24 @@
+{
+  "name": "Server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha test/*.spec.js"
+  },
+  "keywords": [],
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0"
+  },
+  "contributors": [
+    "David Acconcio <dacconcio@gmail.com>",
+    "Jarret Rose <jarretrose@gmail.com>",
+    "Nicholas Melhado <n.melhado@gmail.com>",
+    "Nishtha Malhotra <nishthamalhotra@gmail.com"
+  ],
+  "license": "ISC"
+}
