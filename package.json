@@ -7,9 +7,11 @@
     "test": "test"
   },
   "scripts": {
-    "test": "mocha test/*.spec.js"
+    "test": "mocha test/*.spec.js",
+    "start:dev": "nodemon index.js"
   },
   "keywords": [],
+  "author": "",
   "devDependencies": {
     "chai": "^4.2.0",
     "mocha": "^5.2.0"
@@ -20,5 +22,8 @@
     "Nicholas Melhado <n.melhado@gmail.com>",
     "Nishtha Malhotra <nishthamalhotra@gmail.com"
   ],
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
 }
