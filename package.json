@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "mocha test/*.spec.js",
-    "start:dev": "nodemon index.js"
+    "start:dev": "JWT_SECRET=capstone nodemon index.js"
   },
   "keywords": [],
   "author": "",
@@ -25,6 +25,7 @@
   ],
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "jwt-simple": "^0.5.5"
   }
 }
