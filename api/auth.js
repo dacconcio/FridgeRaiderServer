@@ -10,16 +10,15 @@ router.post('/', (req, res, next) => {
 
   //TO DO - Get it from DB when ready
   const users = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'json/users.json'))).users;
+  const user = users.find(user => user.userName === userName && user.password === password);
 
-  users.find(user => user.userName === userName && user.password === password)
-    .then( user => {
-      if(!user) {
-        return next({ status: 401 });
-      }
-      const token = jwt.encode({ id: user.id, userName: user.userName}, process.env.JWT_SECRET);
-      res.send({ token })
-  })
-  .catch(next);
+  if(!user) {
+    return next({ status: 401 });
+  }
+  
+  const token = jwt.encode({ id: user.id, userName: user.userName}, process.env.JWT_SECRET);
+  res.send({ token })
+
 });
 
 router.get('/', isAuthenticated, (req, res, next) => {
