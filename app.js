@@ -1,11 +1,13 @@
 const express = require('express');
 const app = express();
+const cors = require('cors');
 
+app.use(cors());
 app.use(express.json());
-app.use("/api", require('./api'));
+app.use('/api', require('./api'));
 
 app.get('/', (req, res, next) => {
-    res.send("Fridge Raider Server Running....");
+    res.send('Fridge Raider Server Running....');
 });
 
 // error handling
