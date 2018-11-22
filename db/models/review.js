@@ -1,15 +1,15 @@
 module.exports = {
   id: {
-      primary: true,
-      type: 'uuid',
-      required: true, 
+    primary: true,
+    type: 'uuid',
+    required: true, 
   },
   rating: {
-      type: 'number',
-      required: true,
+    type: 'number',
+    required: true,
   },
   description: {
-      type: 'string',
-      required: true,
+    type: 'string',
+    required: true,
   },
 };
