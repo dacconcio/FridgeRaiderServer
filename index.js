@@ -4,10 +4,18 @@ const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => console.log(`Listening on Port ${PORT}`));
 
-if (process.env.SYNC_DB) {
-  console.log("Syncing Database...")
-  db.sync()
-    .then(() => db.seed())
+const init = async() => {
+  if (process.env.SYNC_DB) {
+    console.log("Syncing Database...")
+    await db.sync();
+  }
+
+  if (process.env.SEED_DB) {
+    console.log("Seeding Database...")
+    await db.seed();
+  }
 }
+
+init();
 
 
