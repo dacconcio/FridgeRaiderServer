@@ -1,3 +1,5 @@
+const { Models } = require('./constants');
+
 module.exports = {
   id: {
     primary: true,
@@ -25,35 +27,35 @@ module.exports = {
     type: 'relationship',
     relationship: 'POSTED_BY',
     direction: 'out',
-    target: 'User',
+    target: Models.User,
     eager: true
   },
   hasReview: {
     type: 'relationship',
     relationship: 'HAS_REVIEW',
     direction: 'out',
-    target: 'Review',
+    target: Models.Review,
     eager: true
   },
   isOfCategory: {
     type: 'relationship',
     relationship: 'IS_OF_CATEGORY',
     direction: 'out',
-    target: 'Category',
+    target: Models.Category,
     eager: true
   },
   isOfCuisine: {
     type: 'relationship',
     relationship: 'IS_OF_CUISINE',
     direction: 'out',
-    target: 'Cuisine',
+    target: Models.Cuisine,
     eager: true
   },
   hasIngredient: {
     type: 'relationship',
     relationship: 'HAS_INGREDIENT',
     direction: 'out',
-    target: 'Ingredient',
+    target: Models.Ingredient,
     properties: {
       measure: {
         type: 'string',

@@ -1,3 +1,5 @@
+const { Models } = require('./constants');
+
 module.exports = {
   id: {
     primary: true,
@@ -31,21 +33,21 @@ module.exports = {
     type: 'relationship',
     relationship: 'HAS_WRITTEN',
     direction: 'out',
-    target: 'Review',
+    target: Models.Review,
     eager: true
   },
   hasSaved: {
     type: 'relationship',
     relationship: 'HAS_SAVED',
     direction: 'out',
-    target: 'Recipe',
+    target: Models.Recipe,
     eager: true
   },
   hasPosted: {
     type: 'relationship',
     relationship: 'HAS_POSTED',
     direction: 'out',
-    target: 'Recipe',
+    target: Models.Recipe,
     eager: true
   },
 };

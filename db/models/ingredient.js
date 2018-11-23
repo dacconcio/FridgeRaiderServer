@@ -1,3 +1,5 @@
+const { Models } = require('./constants');
+
 module.exports = {
   id: {
     primary: true,
@@ -17,7 +19,7 @@ module.exports = {
     type: 'relationship',
     relationship: 'IS_OF_INGREDIENT_TYPE',
     direction: 'out',
-    target: 'IngredientType',
+    target: Models.IngredientType,
     eager: true
   },
   //Ingredient is contained in recipe?
