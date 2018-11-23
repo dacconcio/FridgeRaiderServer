@@ -1,6 +1,6 @@
 const { Models, Relationships, Properties } = require('./models/constants')
 const { sync, seed } = require('./seed')
-const { findNode, findAllNodes, findRelationships } = require('./utils')
+const { findNode, findAllNodes, findRelationships, createRelationship, deleteRelationship } = require('./utils')
 
 module.exports = {
   sync,
@@ -8,6 +8,8 @@ module.exports = {
   findNode,
   findAllNodes,
   findRelationships,
+  createRelationship,
+  deleteRelationship,
   Models,
   Relationships,
   Properties

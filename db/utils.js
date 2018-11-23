@@ -26,20 +26,48 @@ const findRelationships = (model, params, relation, direction, target) => {
     .where(params)
     .relationship(relation, direction, 'r')
     .to('t', target)
-    .return('properties(t) as result')
+    .return('properties(t) as properties_target, properties(r) as properties_relation')
     .execute()
     .then(response => response.records)
     .then(result => {
       let relationships = [];
       if(result.length) {
-        relationships = result.map(element => element.toObject()['result'])
+        relationships = result.map(element => {
+          return {
+            properties: element.toObject()['properties_target'],
+            relation: element.toObject()['properties_relation']
+          }
+        })
       }
       return relationships;
     });
 }
 
+const createRelationship = (source, target, relationship) => {
+  let sourceNode;
+  return neode.first(source.model, source.params)
+   .then( result => {
+      sourceNode = result;
+      return neode.first(target.model, target.params)
+    }).then( targetNode => {
+      return sourceNode.relateTo(targetNode, relationship);
+    })
+}
+
+const deleteRelationship = (source, target, params, relation, direction) => {
+  return neode.query()
+    .match('n', source)
+    .relationship(relation, direction, 'r')
+    .to('t', target)
+    .where(params)
+    .delete('r')
+    .execute();
+}
+
 module.exports = {
   findAllNodes,
   findNode,
-  findRelationships
+  findRelationships,
+  createRelationship,
+  deleteRelationship
 }

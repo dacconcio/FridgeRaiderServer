@@ -1,6 +1,27 @@
 const express = require('express');
-const { findAllNodes, findNode, findRelationships, Models, Relationships } = require('../db')
+const { findAllNodes, findNode, findRelationships, createRelationship, deleteRelationship,
+  Models, Relationships } = require('../db')
 const router = express.Router();
+
+router.put('/:id/saveRecipe/:recipeId', (req, res, next) => { 
+  createRelationship(
+    { model: Models.User, params: {id: req.params.id} },
+    { model: Models.Recipe, params: {id: req.params.recipeId} },
+    Relationships.hasSaved
+  ).then(() => res.sendStatus(204))
+  .catch(next);
+});
+
+router.put('/:id/unSaveRecipe/:recipeId', (req, res, next) => { 
+  deleteRelationship(
+      Models.User, 
+      Models.Recipe, 
+      `n.id='${req.params.id}' and t.id='${req.params.recipeId}'`, 
+      Relationships.HAS_SAVED, 
+      'direction_out')
+    .then(() => res.sendStatus(204))
+    .catch(next);
+});
 
 router.get('/:id', (req, res, next) => { 
 
