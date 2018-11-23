@@ -34,20 +34,17 @@ module.exports = {
     relationship: 'HAS_WRITTEN',
     direction: 'out',
     target: Models.Review,
-    eager: true
   },
   hasSaved: {
     type: 'relationship',
     relationship: 'HAS_SAVED',
     direction: 'out',
     target: Models.Recipe,
-    eager: true
   },
   hasPosted: {
     type: 'relationship',
     relationship: 'HAS_POSTED',
     direction: 'out',
     target: Models.Recipe,
-    eager: true
   },
 };

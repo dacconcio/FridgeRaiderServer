@@ -20,7 +20,6 @@ module.exports = {
     relationship: 'IS_OF_INGREDIENT_TYPE',
     direction: 'out',
     target: Models.IngredientType,
-    eager: true
   },
   //Ingredient is contained in recipe?
 };

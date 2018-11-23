@@ -28,28 +28,24 @@ module.exports = {
     relationship: 'POSTED_BY',
     direction: 'out',
     target: Models.User,
-    eager: true
   },
   hasReview: {
     type: 'relationship',
     relationship: 'HAS_REVIEW',
     direction: 'out',
     target: Models.Review,
-    eager: true
   },
   isOfCategory: {
     type: 'relationship',
     relationship: 'IS_OF_CATEGORY',
     direction: 'out',
     target: Models.Category,
-    eager: true
   },
   isOfCuisine: {
     type: 'relationship',
     relationship: 'IS_OF_CUISINE',
     direction: 'out',
     target: Models.Cuisine,
-    eager: true
   },
   hasIngredient: {
     type: 'relationship',
@@ -62,6 +58,5 @@ module.exports = {
         allow: ['']
       }
     },
-    eager: true
   },
 };
