@@ -87,7 +87,7 @@ const createRecipe = async(recipe, postedByUser, review) => {
   await createdRecipe.relateTo(review, Relationships.hasReview);  
 
   await createdRecipe.relateTo(postedByUser, Relationships.postedBy);
-  //Check if need: await postedByUser.relateTo(createdRecipe, 'hasPosted');
+  await postedByUser.relateTo(createdRecipe, Relationships.hasPosted);
 
   let category = await neode.first(Models.Category, Properties.name, recipe.category);
   if(!category) {

@@ -4,16 +4,16 @@ const router = express.Router();
 
 router.get('/:id', (req, res, next) => { 
 
-  findNode(Models.Recipe, {id: req.params.id })
-    .then(recipe => res.send(recipe))
+  findNode(Models.User, {id: req.params.id })
+    .then(user => res.send(user))
     .catch(next);
 
 });
 
 router.get('/', (req, res, next) => { 
 
-  findAllNodes(Models.Recipe)
-    .then(recipes => res.send(recipes))
+  findAllNodes(Models.User)
+    .then(users => res.send(users))
     .catch(next);
 
 });
