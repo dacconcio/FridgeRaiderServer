@@ -1,0 +1,3293 @@
+{
+  "ingredients": [
+    {
+      "name": "Beef",
+      "tags": "beef,red meat,meat,animal product",
+      "type": "animal product"
+    },
+    {
+      "name": "Plain Flour",
+      "tags": "all purpose flour,wheat flour,flour product",
+      "type": "flour product"
+    },
+    {
+      "name": "Rapeseed Oil",
+      "tags": "canola oil,vegetable oil,cooking oil,cooking fat",
+      "type": "cooking fat"
+    },
+    {
+      "name": "Red Wine",
+      "tags": "red wine,wine,alcoholic drink,drink",
+      "type": "drink"
+    },
+    {
+      "name": "Beef Stock",
+      "tags": "beef stock,stock",
+      "type": "stock"
+    },
+    {
+      "name": "Onion",
+      "tags": "onion",
+      "type": "onion"
+    },
+    {
+      "name": "Carrots",
+      "tags": "carrot,root vegetable,vegetable",
+      "type": "vegetable"
+    },
+    {
+      "name": "Thyme",
+      "tags": "thyme,herbs",
+      "type": "herbs"
+    },
+    {
+      "name": "Mustard",
+      "tags": "mustard,condiment",
+      "type": "condiment"
+    },
+    {
+      "name": "Egg Yolks",
+      "tags": "egg yolk",
+      "type": "egg yolk"
+    },
+    {
+      "name": "Puff Pastry",
+      "tags": "puff pastry dough,pastry dough,crust",
+      "type": "crust"
+    },
+    {
+      "name": "Green Beans",
+      "tags": "green beans,legumes",
+      "type": "legumes"
+    },
+    {
+      "name": "Butter",
+      "tags": "butter,cooking fat",
+      "type": "cooking fat"
+    },
+    {
+      "name": "Salt",
+      "tags": "salt,mineral",
+      "type": "mineral"
+    },
+    {
+      "name": "Pepper",
+      "tags": "pepper,spices",
+      "type": "spices"
+    },
+    {
+      "name": "Olive Oil",
+      "tags": "olive oil,cooking oil,cooking fat",
+      "type": "cooking fat"
+    },
+    {
+      "name": "Shallots",
+      "tags": "shallot,onion",
+      "type": "onion"
+    },
+    {
+      "name": "Garlic",
+      "tags": "garlic",
+      "type": "garlic"
+    },
+    {
+      "name": "Bacon",
+      "tags": "bacon,processed pork,pork,red meat,meat,animal product",
+      "type": "animal product"
+    },
+    {
+      "name": "Bay Leaf",
+      "tags": "bay leaves,herbs",
+      "type": "herbs"
+    },
+    {
+      "name": "Stout",
+      "tags": "stout,beer,alcoholic drink,drink",
+      "type": "drink"
+    },
+    {
+      "name": "Corn Flour",
+      "tags": "corn flour,gluten free flour,flour product",
+      "type": "flour product"
+    },
+    {
+      "name": "Oysters",
+      "tags": "oysters,shellfish,fish,animal product",
+      "type": "animal product"
+    },
+    {
+      "name": "Eggs",
+      "tags": "egg",
+      "type": "egg"
+    },
+    {
+      "name": "Goose Fat",
+      "tags": "goose fat,cooking fat",
+      "type": "cooking fat"
+    },
+    {
+      "name": "Beef Shin",
+      "tags": ""
+    },
+    {
+      "name": "Challots",
+      "tags": ""
+    },
+    {
+      "name": "Chestnut Mushroom",
+      "tags": "crimini mushrooms,mushrooms",
+      "type": "mushrooms"
+    },
+    {
+      "name": "Garlic Clove",
+      "tags": "whole garlic cloves,garlic",
+      "type": "garlic"
+    },
+    {
+      "name": "Bouquet Garni",
+      "tags": "bouquet garni,fresh herbs,herbs",
+      "type": "herbs"
+    },
+    {
+      "name": "Tomato Puree",
+      "tags": "tomato puree",
+      "type": "tomato puree"
+    },
+    {
+      "name": "Celeriac",
+      "tags": "celeriac,root vegetable,vegetable",
+      "type": "vegetable"
+    },
+    {
+      "name": "Rosemary",
+      "tags": "rosemary,herbs",
+      "type": "herbs"
+    },
+    {
+      "name": "Cardamom",
+      "tags": "cardamom,spices",
+      "type": "spices"
+    },
+    {
+      "name": "Beef Brisket",
+      "tags": "beef brisket,beef roast,beef,red meat,meat,animal product",
+      "type": "animal product"
+    },
+    {
+      "name": "Bay Leaves",
+      "tags": "bay leaves,herbs",
+      "type": "herbs"
+    },
+    {
+      "name": "beef stock",
+      "tags": "beef stock,stock",
+      "type": "stock"
+    },
+    {
+      "name": "Potatoes",
+      "tags": "potato",
+      "type": "potato"
+    },
+    {
+      "name": "Onions",
+      "tags": "onion",
+      "type": "onion"
+    },
+    {
+      "name": "Celery",
+      "tags": "celery,vegetable",
+      "type": "vegetable"
+    },
+    {
+      "name": "Leek",
+      "tags": "leek,vegetable",
+      "type": "vegetable"
+    },
+    {
+      "name": "Swede",
+      "tags": "rutabaga,root vegetable,vegetable",
+      "type": "vegetable"
+    },
+    {
+      "name": "Parsley",
+      "tags": "parsley,herbs",
+      "type": "herbs"
+    },
+    {
+      "name": "Baking Powder",
+      "tags": "baking powder",
+      "type": "baking powder"
+    },
+    {
+      "name": "Suet",
+      "tags": "suet,cooking fat",
+      "type": "cooking fat"
+    },
+    {
+      "name": "Water",
+      "tags": "water,drink",
+      "type": "drink"
+    },
+    {
+      "name": "Sesame Seed Oil",
+      "tags": "sesame oil,cooking oil,cooking fat",
+      "type": "cooking fat"
+    },
+    {
+      "name": "Egg",
+      "tags": "egg",
+      "type": "egg"
+    },
+    {
+      "name": "Starch",
+      "tags": "starch",
+      "type": "starch"
+    },
+    {
+      "name": "Oil",
+      "tags": "cooking oil,cooking fat",
+      "type": "cooking fat"
+    },
+    {
+      "name": "Noodles",
+      "tags": "pasta",
+      "type": "pasta"
+    },
+    {
+      "name": "Minced Garlic",
+      "tags": "minced garlic,garlic",
+      "type": "garlic"
+    },
+    {
+      "name": "Ginger",
+      "tags": "ginger,spices",
+      "type": "spices"
+    },
+    {
+      "name": "Bean Sprouts",
+      "tags": "bean sprouts,sprouts",
+      "type": "sprouts"
+    },
+    {
+      "name": "Mushrooms",
+      "tags": "mushrooms",
+      "type": "mushrooms"
+    },
+    {
+      "name": "Oyster Sauce",
+      "tags": "oyster sauce,condiment",
+      "type": "condiment"
+    },
+    {
+      "name": "Sugar",
+      "tags": "sugar,added sugar,additive",
+      "type": "additive"
+    },
+    {
+      "name": "Soy Sauce",
+      "tags": "soy sauce,condiment",
+      "type": "condiment"
+    },
+    {
+      "name": "Beef Fillet",
+      "tags": "beef tenderloin,beef,red meat,meat,animal product",
+      "type": "animal product"
+    },
+    {
+      "name": "Creme Fraiche",
+      "tags": ""
+    },
+    {
+      "name": "English Mustard",
+      "tags": "mustard,condiment",
+      "type": "condiment"
+    },
+    {
+      "name": "Broccoli",
+      "tags": "broccoli,vegetable",
+      "type": "vegetable"
+    },
+    {
+      "name": "plain flour",
+      "tags": "all purpose flour,wheat flour,flour product",
+      "type": "flour product"
+    },
+    {
+      "name": "milk",
+      "tags": "milk,drink",
+      "type": "drink"
+    },
+    {
+      "name": "sunflower oil",
+      "tags": "sunflower oil,vegetable oil,cooking oil,cooking fat",
+      "type": "cooking fat"
+    },
+    {
+      "name": "mushrooms",
+      "tags": "mushrooms",
+      "type": "mushrooms"
+    },
+    {
+      "name": "Parma ham",
+      "tags": "ham,processed pork,pork,red meat,meat,animal product",
+      "type": "animal product"
+    },
+    {
+      "name": "Flour",
+      "tags": "all purpose flour,wheat flour,flour product",
+      "type": "flour product"
+    },
+    {
+      "name": "Olive oil",
+      "tags": "olive oil,cooking oil,cooking fat",
+      "type": "cooking fat"
+    },
+    {
+      "name": "Chorizo",
+      "tags": "chorizo,pork sausage,pork,red meat,meat,animal product",
+      "type": "animal product"
+    },
+    {
+      "name": "Cumin",
+      "tags": "cumin,spices",
+      "type": "spices"
+    },
+    {
+      "name": "All spice",
+      "tags": "allspice,spices",
+      "type": "spices"
+    },
+    {
+      "name": "Cloves",
+      "tags": "clove,spices",
+      "type": "spices"
+    },
+    {
+      "name": "Cinnamon stick",
+      "tags": "cinnamon stick,cinnamon,spices",
+      "type": "spices"
+    },
+    {
+      "name": "Oregano",
+      "tags": "oregano,herbs",
+      "type": "herbs"
+    },
+    {
+      "name": "Ancho Chillies",
+      "tags": "ancho chili pepper,dried red chili pepper,dried chili pepper,chili pepper,peppers,vegetable",
+      "type": "vegetable"
+    },
+    {
+      "name": "Balsamic Vinegar",
+      "tags": "balsamic vinegar,vinegar",
+      "type": "vinegar"
+    },
+    {
+      "name": "Plum Tomatoes",
+      "tags": "plum tomato,tomato,vegetable",
+      "type": "vegetable"
+    },
+    {
+      "name": "Tomato Ketchup",
+      "tags": "ketchup,condiment",
+      "type": "condiment"
+    },
+    {
+      "name": "Dark Brown Sugar",
+      "tags": "dark brown sugar,brown sugar,sugar,added sugar,additive",
+      "type": "additive"
+    },
+    {
+      "name": "Borlotti Beans",
+      "tags": "borlotti beans,cranberry beans,beans,legumes",
+      "type": "legumes"
+    },
+    {
+      "name": "whole wheat",
+      "tags": "wheat,grains",
+      "type": "grains"
+    },
+    {
+      "name": "lamb loin chops",
+      "tags": "lamb loin chop,lamb chop,lamb,red meat,meat,animal product",
+      "type": "animal product"
+    },
+    {
+      "name": "olive oil",
+      "tags": "olive oil,cooking oil,cooking fat",
+      "type": "cooking fat"
+    },
+    {
+      "name": "shallots",
+      "tags": "shallot,onion",
+      "type": "onion"
+    },
+    {
+      "name": "carrots",
+      "tags": "carrot,root vegetable,vegetable",
+      "type": "vegetable"
+    },
+    {
+      "name": "turnips",
+      "tags": "turnip,root vegetable,vegetable",
+      "type": "vegetable"
+    },
+    {
+      "name": "celeriac",
+      "tags": "celeriac,root vegetable,vegetable",
+      "type": "vegetable"
+    },
+    {
+      "name": "charlotte potatoes",
+      "tags": "potato",
+      "type": "potato"
+    },
+    {
+      "name": "white wine",
+      "tags": "white wine,wine,alcoholic drink,drink",
+      "type": "drink"
+    },
+    {
+      "name": "caster sugar",
+      "tags": "caster sugar,sugar,added sugar,additive",
+      "type": "additive"
+    },
+    {
+      "name": "fresh thyme",
+      "tags": "fresh thyme,fresh herbs,herbs",
+      "type": "herbs"
+    },
+    {
+      "name": "oregano",
+      "tags": "oregano,herbs",
+      "type": "herbs"
+    },
+    {
+      "name": "chicken stock",
+      "tags": "chicken stock,stock",
+      "type": "stock"
+    },
+    {
+      "name": "Curry Powder",
+      "tags": "curry powder,spices",
+      "type": "spices"
+    },
+    {
+      "name": "Minced Beef",
+      "tags": "ground beef,beef,red meat,meat,animal product",
+      "type": "animal product"
+    },
+    {
+      "name": "Allspice",
+      "tags": "allspice,spices",
+      "type": "spices"
+    },
+    {
+      "name": "Black Pepper",
+      "tags": "black pepper,pepper,spices",
+      "type": "spices"
+    },
+    {
+      "name": "Vegetable Oil",
+      "tags": "vegetable oil,cooking oil,cooking fat",
+      "type": "cooking fat"
+    },
+    {
+      "name": "Red Pepper",
+      "tags": "red pepper,bell pepper,sweet pepper,peppers,vegetable",
+      "type": "vegetable"
+    },
+    {
+      "name": "Tofu",
+      "tags": "tofu,meat substitute",
+      "type": "meat substitute"
+    },
+    {
+      "name": "Doubanjiang",
+      "tags": ""
+    },
+    {
+      "name": "Fermented Black Beans",
+      "tags": "douchi,black beans,beans,legumes",
+      "type": "legumes"
+    },
+    {
+      "name": "Sichuan pepper",
+      "tags": "pepper,spices",
+      "type": "spices"
+    },
+    {
+      "name": "Scallions",
+      "tags": "green onions,onion",
+      "type": "onion"
+    },
+    {
+      "name": "Spring Onions",
+      "tags": "spring onions,onion",
+      "type": "onion"
+    },
+    {
+      "name": "Cornstarch",
+      "tags": "corn starch",
+      "type": "corn starch"
+    },
+    {
+      "name": "Peanuts",
+      "tags": "peanuts,legumes",
+      "type": "legumes"
+    },
+    {
+      "name": "Coconut cream",
+      "tags": "coconut cream",
+      "type": "coconut cream"
+    },
+    {
+      "name": "Massaman curry paste",
+      "tags": "massaman curry,curry,main dish",
+      "type": "main dish"
+    },
+    {
+      "name": "Lime",
+      "tags": "lime,citrus fruit,fruit,flavor",
+      "type": "flavor"
+    },
+    {
+      "name": "Tamarind paste",
+      "tags": "tamarind paste",
+      "type": "tamarind paste"
+    },
+    {
+      "name": "Brown sugar",
+      "tags": "brown sugar,sugar,added sugar,additive",
+      "type": "additive"
+    },
+    {
+      "name": "Fish Sauce",
+      "tags": "fish sauce,condiment",
+      "type": "condiment"
+    },
+    {
+      "name": "chilli",
+      "tags": "chili,stew,soup",
+      "type": "soup"
+    },
+    {
+      "name": "Jasmine Rice",
+      "tags": "jasmine rice,long grain rice,rice,grains",
+      "type": "grains"
+    },
+    {
+      "name": "Worcestershire Sauce",
+      "tags": "worcestershire sauce,condiment",
+      "type": "condiment"
+    },
+    {
+      "name": "Shortcrust Pastry",
+      "tags": "shortcrust pastry,pie dough,pastry dough,crust",
+      "type": "crust"
+    },
+    {
+      "name": "Coriander",
+      "tags": "coriander,herbs",
+      "type": "herbs"
+    },
+    {
+      "name": "Paprika",
+      "tags": "paprika,spices",
+      "type": "spices"
+    },
+    {
+      "name": "Dill",
+      "tags": "dill,herbs",
+      "type": "herbs"
+    },
+    {
+      "name": "Celery Salt",
+      "tags": "celery salt,seasoned salt,salt,mineral",
+      "type": "mineral"
+    },
+    {
+      "name": "Red Pepper Flakes",
+      "tags": "red pepper flakes,spices",
+      "type": "spices"
+    },
+    {
+      "name": "Oxtail",
+      "tags": "oxtail,beef,red meat,meat,animal product",
+      "type": "animal product"
+    },
+    {
+      "name": "Scotch Bonnet",
+      "tags": "scotch whiskey,whiskey,liquor,alcoholic drink,drink",
+      "type": "drink"
+    },
+    {
+      "name": "Fresh Thyme",
+      "tags": "fresh thyme,fresh herbs,herbs",
+      "type": "herbs"
+    },
+    {
+      "name": "Broad Beans",
+      "tags": "fava beans,beans,legumes",
+      "type": "legumes"
+    },
+    {
+      "name": "Milk",
+      "tags": "milk,drink",
+      "type": "drink"
+    },
+    {
+      "name": "Creamed Corn",
+      "tags": "creamed corn",
+      "type": "creamed corn"
+    },
+    {
+      "name": "Kidney Beans",
+      "tags": "kidney beans,beans,legumes",
+      "type": "legumes"
+    },
+    {
+      "name": "Coconut Milk",
+      "tags": "coconut milk,milk substitute",
+      "type": "milk substitute"
+    },
+    {
+      "name": "onions",
+      "tags": "onion",
+      "type": "onion"
+    },
+    {
+      "name": "garlic",
+      "tags": "garlic",
+      "type": "garlic"
+    },
+    {
+      "name": "lean minced beef",
+      "tags": "lean ground beef,ground beef,beef,red meat,meat,animal product",
+      "type": "animal product"
+    },
+    {
+      "name": "dried oregano",
+      "tags": "dried oregano,dried herbs,herbs",
+      "type": "herbs"
+    },
+    {
+      "name": "tomatoes",
+      "tags": "tomato,vegetable",
+      "type": "vegetable"
+    },
+    {
+      "name": "hot beef stock",
+      "tags": "beef stock,stock",
+      "type": "stock"
+    },
+    {
+      "name": "tomato puree",
+      "tags": "tomato puree",
+      "type": "tomato puree"
+    },
+    {
+      "name": "worcestershire sauce",
+      "tags": "worcestershire sauce,condiment",
+      "type": "condiment"
+    },
+    {
+      "name": "spaghetti",
+      "tags": "spaghetti,long pasta,pasta",
+      "type": "pasta"
+    },
+    {
+      "name": "parmesan",
+      "tags": "parmesan,hard cheese,cheese",
+      "type": "cheese"
+    },
+    {
+      "name": "Egg White",
+      "tags": "egg whites",
+      "type": "egg whites"
+    },
+    {
+      "name": "Lamb Kidney",
+      "tags": "kidney,organ meat,meat,animal product",
+      "type": "animal product"
+    },
+    {
+      "name": "Canola Oil",
+      "tags": "canola oil,vegetable oil,cooking oil,cooking fat",
+      "type": "cooking fat"
+    },
+    {
+      "name": "Brandy",
+      "tags": "brandy,liquor,alcoholic drink,drink",
+      "type": "drink"
+    },
+    {
+      "name": "Heavy Cream",
+      "tags": "heavy cream,cream",
+      "type": "cream"
+    },
+    {
+      "name": "Dijon Mustard",
+      "tags": "dijon mustard,mustard,condiment",
+      "type": "condiment"
+    },
+    {
+      "name": "Tabasco Sauce",
+      "tags": "hot sauce,condiment",
+      "type": "condiment"
+    },
+    {
+      "name": "Chives",
+      "tags": "chives,herbs",
+      "type": "herbs"
+    },
+    {
+      "name": "Green Pepper",
+      "tags": "green pepper,bell pepper,sweet pepper,peppers,vegetable",
+      "type": "vegetable"
+    },
+    {
+      "name": "Cooking wine",
+      "tags": "cooking wine",
+      "type": "cooking wine"
+    },
+    {
+      "name": "Hotsauce",
+      "tags": "hot sauce,condiment",
+      "type": "condiment"
+    },
+    {
+      "name": "Sausages",
+      "tags": "sausage,processed meat,meat,animal product",
+      "type": "animal product"
+    },
+    {
+      "name": "Tomatoes",
+      "tags": "tomato,vegetable",
+      "type": "vegetable"
+    },
+    {
+      "name": "Black Pudding",
+      "tags": "black pudding,sausage,processed meat,meat,animal product",
+      "type": "animal product"
+    },
+    {
+      "name": "Bread",
+      "tags": "bread,baked goods",
+      "type": "baked goods"
+    },
+    {
+      "name": "Baked Beans",
+      "tags": "baked beans,beans,legumes",
+      "type": "legumes"
+    },
+    {
+      "name": "Chicken",
+      "tags": "whole chicken,chicken,poultry,meat,animal product",
+      "type": "animal product"
+    },
+    {
+      "name": "Tomato",
+      "tags": "tomato,vegetable",
+      "type": "vegetable"
+    },
+    {
+      "name": "Chicken Stock Cube",
+      "tags": "chicken bouillon cube,bouillon cube",
+      "type": "bouillon cube"
+    },
+    {
+      "name": "Nutmeg",
+      "tags": "nutmeg,spices",
+      "type": "spices"
+    },
+    {
+      "name": "Mustard Powder",
+      "tags": "mustard powder,spices",
+      "type": "spices"
+    },
+    {
+      "name": "Sweetcorn",
+      "tags": "corn,grains",
+      "type": "grains"
+    },
+    {
+      "name": "Squash",
+      "tags": "squash,vegetable",
+      "type": "vegetable"
+    },
+    {
+      "name": "onion",
+      "tags": "onion",
+      "type": "onion"
+    },
+    {
+      "name": "red pepper flakes",
+      "tags": "red pepper flakes,spices",
+      "type": "spices"
+    },
+    {
+      "name": "heavy cream",
+      "tags": "heavy cream,cream",
+      "type": "cream"
+    },
+    {
+      "name": "Parmesan cheese",
+      "tags": "parmesan,hard cheese,cheese",
+      "type": "cheese"
+    },
+    {
+      "name": "bowtie pasta",
+      "tags": "farfalle,pasta",
+      "type": "pasta"
+    },
+    {
+      "name": "Red Onions",
+      "tags": "red onion,onion",
+      "type": "onion"
+    },
+    {
+      "name": "Sun-Dried Tomatoes",
+      "tags": "sun dried tomatoes,tomato,vegetable",
+      "type": "vegetable"
+    },
+    {
+      "name": "Basmati Rice",
+      "tags": "basmati rice,long grain rice,rice,grains",
+      "type": "grains"
+    },
+    {
+      "name": "Chicken Stock",
+      "tags": "chicken stock,stock",
+      "type": "stock"
+    },
+    {
+      "name": "Dry White Wine",
+      "tags": "dry white wine,white wine,wine,alcoholic drink,drink",
+      "type": "drink"
+    },
+    {
+      "name": "Lemons",
+      "tags": "lemon,citrus fruit,fruit,flavor",
+      "type": "flavor"
+    },
+    {
+      "name": "Black Olives",
+      "tags": "black olives,olives",
+      "type": "olives"
+    },
+    {
+      "name": "Ginger Cordial",
+      "tags": "liqueur,alcoholic drink,drink",
+      "type": "drink"
+    },
+    {
+      "name": "Rice",
+      "tags": "rice,grains",
+      "type": "grains"
+    },
+    {
+      "name": "Chicken Breast",
+      "tags": "chicken breast,chicken,poultry,meat,animal product",
+      "type": "animal product"
+    },
+    {
+      "name": "Harissa Spice",
+      "tags": "spices",
+      "type": "spices"
+    },
+    {
+      "name": "Dried Apricots",
+      "tags": "dried apricots,apricot,fruit,flavor",
+      "type": "flavor"
+    },
+    {
+      "name": "Chickpeas",
+      "tags": "chickpeas,legumes",
+      "type": "legumes"
+    },
+    {
+      "name": "Couscous",
+      "tags": "couscous",
+      "type": "couscous"
+    },
+    {
+      "name": "Enchilada sauce",
+      "tags": "enchilada sauce,sauce",
+      "type": "sauce"
+    },
+    {
+      "name": "shredded Monterey Jack cheese",
+      "tags": "monterey jack cheese,cheese",
+      "type": "cheese"
+    },
+    {
+      "name": "corn tortillas",
+      "tags": "corn tortilla,tortilla,wrap",
+      "type": "wrap"
+    },
+    {
+      "name": "chicken breasts",
+      "tags": "chicken breast,chicken,poultry,meat,animal product",
+      "type": "animal product"
+    },
+    {
+      "name": "macaroni",
+      "tags": "macaroni,pasta",
+      "type": "pasta"
+    },
+    {
+      "name": "fajita seasoning",
+      "tags": "fajitas,main dish",
+      "type": "main dish"
+    },
+    {
+      "name": "salt",
+      "tags": "salt,mineral",
+      "type": "mineral"
+    },
+    {
+      "name": "chicken breast",
+      "tags": "chicken breast,chicken,poultry,meat,animal product",
+      "type": "animal product"
+    },
+    {
+      "name": "red pepper",
+      "tags": "red pepper,bell pepper,sweet pepper,peppers,vegetable",
+      "type": "vegetable"
+    },
+    {
+      "name": "cheddar cheese",
+      "tags": "cheddar cheese,cheese",
+      "type": "cheese"
+    },
+    {
+      "name": "parsley",
+      "tags": "parsley,herbs",
+      "type": "herbs"
+    },
+    {
+      "name": "White Wine",
+      "tags": "white wine,wine,alcoholic drink,drink",
+      "type": "drink"
+    },
+    {
+      "name": "Double Cream",
+      "tags": "double cream,cream",
+      "type": "cream"
+    },
+    {
+      "name": "Ham",
+      "tags": "ham,processed pork,pork,red meat,meat,animal product",
+      "type": "animal product"
+    },
+    {
+      "name": "Sea Salt",
+      "tags": "sea salt,salt,mineral",
+      "type": "mineral"
+    },
+    {
+      "name": "Free-range Egg, Beaten",
+      "tags": "egg",
+      "type": "egg"
+    },
+    {
+      "name": "Cold Water",
+      "tags": "water,drink",
+      "type": "drink"
+    },
+    {
+      "name": "Ginger paste",
+      "tags": "ginger paste",
+      "type": "ginger paste"
+    },
+    {
+      "name": "Vegetable oil",
+      "tags": "vegetable oil,cooking oil,cooking fat",
+      "type": "cooking fat"
+    },
+    {
+      "name": "Cumin seeds",
+      "tags": "cumin seeds,cumin,spices",
+      "type": "spices"
+    },
+    {
+      "name": "Coriander seeds",
+      "tags": "whole coriander seeds,coriander,herbs",
+      "type": "herbs"
+    },
+    {
+      "name": "Turmeric powder",
+      "tags": "turmeric,natural food coloring,food color,additive",
+      "type": "additive"
+    },
+    {
+      "name": "Chilli powder",
+      "tags": "chili powder,spices",
+      "type": "spices"
+    },
+    {
+      "name": "Green chilli",
+      "tags": "green chili pepper,chili pepper,peppers,vegetable",
+      "type": "vegetable"
+    },
+    {
+      "name": "Yogurt",
+      "tags": "yogurt,breakfast",
+      "type": "breakfast"
+    },
+    {
+      "name": "Cream",
+      "tags": "cream",
+      "type": "cream"
+    },
+    {
+      "name": "fenugreek",
+      "tags": ""
+    },
+    {
+      "name": "Garam masala",
+      "tags": "garam masala,seasoning mix,seasoning",
+      "type": "seasoning"
+    },
+    {
+      "name": "Chicken thigh",
+      "tags": "chicken thighs,chicken,poultry,meat,animal product",
+      "type": "animal product"
+    },
+    {
+      "name": "Soy sauce",
+      "tags": "soy sauce,condiment",
+      "type": "condiment"
+    },
+    {
+      "name": "Sake",
+      "tags": "sake,rice wine,alcoholic drink,drink",
+      "type": "drink"
+    },
+    {
+      "name": "Granulated sugar",
+      "tags": "granulated sugar,sugar,added sugar,additive",
+      "type": "additive"
+    },
+    {
+      "name": "Potato starch",
+      "tags": "potato starch,starch",
+      "type": "starch"
+    },
+    {
+      "name": "Lemon",
+      "tags": "lemon,citrus fruit,fruit,flavor",
+      "type": "flavor"
+    },
+    {
+      "name": "Chicken Legs",
+      "tags": "chicken leg,chicken,poultry,meat,animal product",
+      "type": "animal product"
+    },
+    {
+      "name": "Passata",
+      "tags": "passata",
+      "type": "passata"
+    },
+    {
+      "name": "Tinned Tomatos",
+      "tags": "tomato,vegetable",
+      "type": "vegetable"
+    },
+    {
+      "name": "Gruyere cheese",
+      "tags": "gruyere,cheese",
+      "type": "cheese"
+    },
+    {
+      "name": "Chicken Thighs",
+      "tags": "chicken thighs,chicken,poultry,meat,animal product",
+      "type": "animal product"
+    },
+    {
+      "name": "Chicken Breasts",
+      "tags": "chicken breast,chicken,poultry,meat,animal product",
+      "type": "animal product"
+    },
+    {
+      "name": "thyme",
+      "tags": "thyme,herbs",
+      "type": "herbs"
+    },
+    {
+      "name": "bay leaves",
+      "tags": "bay leaves,herbs",
+      "type": "herbs"
+    },
+    {
+      "name": "chestnut mushroom",
+      "tags": "crimini mushrooms,mushrooms",
+      "type": "mushrooms"
+    },
+    {
+      "name": "butter",
+      "tags": "butter,cooking fat",
+      "type": "cooking fat"
+    },
+    {
+      "name": "Vinaigrette Dressing",
+      "tags": "vinaigrette,salad dressing",
+      "type": "salad dressing"
+    },
+    {
+      "name": "Smoked Paprika",
+      "tags": "smoked paprika,paprika,spices",
+      "type": "spices"
+    },
+    {
+      "name": "Refried Beans",
+      "tags": "refried beans",
+      "type": "refried beans"
+    },
+    {
+      "name": "Hard Taco Shells",
+      "tags": "taco shells",
+      "type": "taco shells"
+    },
+    {
+      "name": "Shredded Mexican Cheese",
+      "tags": "mexican cheese,cheese",
+      "type": "cheese"
+    },
+    {
+      "name": "Grape Tomatoes",
+      "tags": "grape tomato,tomato,vegetable",
+      "type": "vegetable"
+    },
+    {
+      "name": "Jalapeno",
+      "tags": "jalapeno pepper,chili pepper,peppers,vegetable",
+      "type": "vegetable"
+    },
+    {
+      "name": "Avocado",
+      "tags": "avocado",
+      "type": "avocado"
+    },
+    {
+      "name": "Green Salsa",
+      "tags": "salsa verde,salsa,dip,appetizer",
+      "type": "appetizer"
+    },
+    {
+      "name": "Sour Cream",
+      "tags": "sour cream",
+      "type": "sour cream"
+    },
+    {
+      "name": "Onion Salt",
+      "tags": "onion salt,seasoned salt,salt,mineral",
+      "type": "mineral"
+    },
+    {
+      "name": "Garlic Powder",
+      "tags": "garlic powder,dehydrated garlic,spices",
+      "type": "spices"
+    },
+    {
+      "name": "Duck Sauce",
+      "tags": "duck sauce,condiment",
+      "type": "condiment"
+    },
+    {
+      "name": "Honey",
+      "tags": "honey,unrefined sweetener,sweetener",
+      "type": "sweetener"
+    },
+    {
+      "name": "Rice Vinegar",
+      "tags": "rice vinegar,vinegar",
+      "type": "vinegar"
+    },
+    {
+      "name": "Gochujang",
+      "tags": "gochujang,condiment",
+      "type": "condiment"
+    },
+    {
+      "name": "Red Chilli",
+      "tags": "red chili pepper,chili pepper,peppers,vegetable",
+      "type": "vegetable"
+    },
+    {
+      "name": "Brown Sugar",
+      "tags": "brown sugar,sugar,added sugar,additive",
+      "type": "additive"
+    },
+    {
+      "name": "egg",
+      "tags": "egg",
+      "type": "egg"
+    },
+    {
+      "name": "breadcrumbs",
+      "tags": "breadcrumbs",
+      "type": "breadcrumbs"
+    },
+    {
+      "name": "vegetable oil",
+      "tags": "vegetable oil,cooking oil,cooking fat",
+      "type": "cooking fat"
+    },
+    {
+      "name": "carrot",
+      "tags": "carrot,root vegetable,vegetable",
+      "type": "vegetable"
+    },
+    {
+      "name": "curry powder",
+      "tags": "curry powder,spices",
+      "type": "spices"
+    },
+    {
+      "name": "honey",
+      "tags": "honey,unrefined sweetener,sweetener",
+      "type": "sweetener"
+    },
+    {
+      "name": "soy sauce",
+      "tags": "soy sauce,condiment",
+      "type": "condiment"
+    },
+    {
+      "name": "bay leaf",
+      "tags": "bay leaves,herbs",
+      "type": "herbs"
+    },
+    {
+      "name": "garam masala",
+      "tags": "garam masala,seasoning mix,seasoning",
+      "type": "seasoning"
+    },
+    {
+      "name": "paprika",
+      "tags": "paprika,spices",
+      "type": "spices"
+    },
+    {
+      "name": "onion salt",
+      "tags": "onion salt,seasoned salt,salt,mineral",
+      "type": "mineral"
+    },
+    {
+      "name": "chili powder",
+      "tags": "chili powder,spices",
+      "type": "spices"
+    },
+    {
+      "name": "black pepper",
+      "tags": "black pepper,pepper,spices",
+      "type": "spices"
+    },
+    {
+      "name": "celery salt",
+      "tags": "celery salt,seasoned salt,salt,mineral",
+      "type": "mineral"
+    },
+    {
+      "name": "sage",
+      "tags": "sage,herbs",
+      "type": "herbs"
+    },
+    {
+      "name": "garlic powder",
+      "tags": "garlic powder,dehydrated garlic,spices",
+      "type": "spices"
+    },
+    {
+      "name": "allspice",
+      "tags": "allspice,spices",
+      "type": "spices"
+    },
+    {
+      "name": "basil",
+      "tags": "basil,herbs",
+      "type": "herbs"
+    },
+    {
+      "name": "marjoram",
+      "tags": "marjoram,herbs",
+      "type": "herbs"
+    },
+    {
+      "name": "Chilli Powder",
+      "tags": "chili powder,spices",
+      "type": "spices"
+    },
+    {
+      "name": "Water Chestnut",
+      "tags": "water chestnuts",
+      "type": "water chestnuts"
+    },
+    {
+      "name": "ginger",
+      "tags": "ginger,spices",
+      "type": "spices"
+    },
+    {
+      "name": "lemon juice",
+      "tags": "lemon juice",
+      "type": "lemon juice"
+    },
+    {
+      "name": "vine leaves",
+      "tags": "grape leaves",
+      "type": "grape leaves"
+    },
+    {
+      "name": "fennel bulb",
+      "tags": "fennel bulb,fennel,vegetable",
+      "type": "vegetable"
+    },
+    {
+      "name": "lamb mince",
+      "tags": "ground lamb,lamb,red meat,meat,animal product",
+      "type": "animal product"
+    },
+    {
+      "name": "potato",
+      "tags": "potato",
+      "type": "potato"
+    },
+    {
+      "name": "basmati rice",
+      "tags": "basmati rice,long grain rice,rice,grains",
+      "type": "grains"
+    },
+    {
+      "name": "chopped parsley",
+      "tags": "parsley,herbs",
+      "type": "herbs"
+    },
+    {
+      "name": "coriander",
+      "tags": "coriander,herbs",
+      "type": "herbs"
+    },
+    {
+      "name": "clove",
+      "tags": "clove,spices",
+      "type": "spices"
+    },
+    {
+      "name": "cinnamon",
+      "tags": "cinnamon,spices",
+      "type": "spices"
+    },
+    {
+      "name": "mozzarella balls",
+      "tags": "bocconcini,mozzarella,cheese",
+      "type": "cheese"
+    },
+    {
+      "name": "baby plum tomatoes",
+      "tags": "plum tomato,tomato,vegetable",
+      "type": "vegetable"
+    },
+    {
+      "name": "fresh basil",
+      "tags": "fresh basil,basil,herbs",
+      "type": "herbs"
+    },
+    {
+      "name": "farfalle",
+      "tags": "farfalle,pasta",
+      "type": "pasta"
+    },
+    {
+      "name": "extra virgin olive oil",
+      "tags": "extra virgin olive oil,olive oil,cooking oil,cooking fat",
+      "type": "cooking fat"
+    },
+    {
+      "name": "Green Olives",
+      "tags": "green olives,olives",
+      "type": "olives"
+    },
+    {
+      "name": "tuna",
+      "tags": "tuna,fish,animal product",
+      "type": "animal product"
+    },
+    {
+      "name": "pepper",
+      "tags": "pepper,spices",
+      "type": "spices"
+    },
+    {
+      "name": "Sunflower Oil",
+      "tags": "sunflower oil,vegetable oil,cooking oil,cooking fat",
+      "type": "cooking fat"
+    },
+    {
+      "name": "Peanut Butter",
+      "tags": "peanut butter,nut butter,spread,menu item type",
+      "type": "menu item type"
+    },
+    {
+      "name": "Greek Yogurt",
+      "tags": "greek yogurt,yogurt,breakfast",
+      "type": "breakfast"
+    },
+    {
+      "name": "rice stick noodles",
+      "tags": "pasta",
+      "type": "pasta"
+    },
+    {
+      "name": "dark soy sauce",
+      "tags": "dark soy sauce,soy sauce,condiment",
+      "type": "condiment"
+    },
+    {
+      "name": "oyster sauce",
+      "tags": "oyster sauce,condiment",
+      "type": "condiment"
+    },
+    {
+      "name": "white vinegar",
+      "tags": "distilled white vinegar,vinegar",
+      "type": "vinegar"
+    },
+    {
+      "name": "sugar",
+      "tags": "sugar,added sugar,additive",
+      "type": "additive"
+    },
+    {
+      "name": "water",
+      "tags": "water,drink",
+      "type": "drink"
+    },
+    {
+      "name": "peanut oil",
+      "tags": "peanut oil,cooking oil,cooking fat",
+      "type": "cooking fat"
+    },
+    {
+      "name": "Chinese broccoli",
+      "tags": "broccoli,vegetable",
+      "type": "vegetable"
+    },
+    {
+      "name": "Parmesan",
+      "tags": "parmesan,hard cheese,cheese",
+      "type": "cheese"
+    },
+    {
+      "name": "Spinach",
+      "tags": "spinach,greens,vegetable",
+      "type": "vegetable"
+    },
+    {
+      "name": "Peas",
+      "tags": "peas,legumes",
+      "type": "legumes"
+    },
+    {
+      "name": "lemons",
+      "tags": "lemon,citrus fruit,fruit,flavor",
+      "type": "flavor"
+    },
+    {
+      "name": "red onions",
+      "tags": "red onion,onion",
+      "type": "onion"
+    },
+    {
+      "name": "chicken thighs",
+      "tags": "chicken thighs,chicken,poultry,meat,animal product",
+      "type": "animal product"
+    },
+    {
+      "name": "Greek yogurt",
+      "tags": "greek yogurt,yogurt,breakfast",
+      "type": "breakfast"
+    },
+    {
+      "name": "garlic clove",
+      "tags": "whole garlic cloves,garlic",
+      "type": "garlic"
+    },
+    {
+      "name": "ground cumin",
+      "tags": "ground cumin,cumin,spices",
+      "type": "spices"
+    },
+    {
+      "name": "chilli powder",
+      "tags": "chili powder,spices",
+      "type": "spices"
+    },
+    {
+      "name": "turmeric",
+      "tags": "turmeric,natural food coloring,food color,additive",
+      "type": "additive"
+    },
+    {
+      "name": "brown sugar",
+      "tags": "brown sugar,sugar,added sugar,additive",
+      "type": "additive"
+    },
+    {
+      "name": "ground ginger",
+      "tags": "ginger powder,ginger,spices",
+      "type": "spices"
+    },
+    {
+      "name": "minced garlic",
+      "tags": "minced garlic,garlic",
+      "type": "garlic"
+    },
+    {
+      "name": "cornstarch",
+      "tags": "corn starch",
+      "type": "corn starch"
+    },
+    {
+      "name": "stir-fry vegetables",
+      "tags": "stir fry vegetables,mixed vegetables,vegetable",
+      "type": "vegetable"
+    },
+    {
+      "name": "brown rice",
+      "tags": "brown rice,rice,grains",
+      "type": "grains"
+    },
+    {
+      "name": "potatoes",
+      "tags": "potato",
+      "type": "potato"
+    },
+    {
+      "name": "green beans",
+      "tags": "green beans,legumes",
+      "type": "legumes"
+    },
+    {
+      "name": "Thai green curry paste",
+      "tags": "thai curry,curry,main dish",
+      "type": "main dish"
+    },
+    {
+      "name": "coconut milk",
+      "tags": "coconut milk,milk substitute",
+      "type": "milk substitute"
+    },
+    {
+      "name": "Thai fish sauce",
+      "tags": "thai fish sauce,fish sauce,condiment",
+      "type": "condiment"
+    },
+    {
+      "name": "lime",
+      "tags": "lime,citrus fruit,fruit,flavor",
+      "type": "flavor"
+    },
+    {
+      "name": "Caster Sugar",
+      "tags": "caster sugar,sugar,added sugar,additive",
+      "type": "additive"
+    },
+    {
+      "name": "Braeburn Apples",
+      "tags": "braeburn apple,apple,fruit,flavor",
+      "type": "flavor"
+    },
+    {
+      "name": "Demerara Sugar",
+      "tags": "demerara sugar,raw sugar,unrefined sugar,granulated sugar,sugar,added sugar,additive",
+      "type": "additive"
+    },
+    {
+      "name": "Blackberrys",
+      "tags": "blackberries,berries,fruit,flavor",
+      "type": "flavor"
+    },
+    {
+      "name": "Cinnamon",
+      "tags": "cinnamon,spices",
+      "type": "spices"
+    },
+    {
+      "name": "Ice Cream",
+      "tags": "ice cream,frozen dessert,dessert",
+      "type": "dessert"
+    },
+    {
+      "name": "digestive biscuits",
+      "tags": "digestive biscuits,cookies,dessert",
+      "type": "dessert"
+    },
+    {
+      "name": "Bramley apples",
+      "tags": "bramley apple,apple,fruit,flavor",
+      "type": "flavor"
+    },
+    {
+      "name": "butter, softened",
+      "tags": "butter,cooking fat",
+      "type": "cooking fat"
+    },
+    {
+      "name": "free-range eggs, beaten",
+      "tags": "egg",
+      "type": "egg"
+    },
+    {
+      "name": "ground almonds",
+      "tags": "almond meal",
+      "type": "almond meal"
+    },
+    {
+      "name": "almond extract",
+      "tags": "almond extract,extract",
+      "type": "extract"
+    },
+    {
+      "name": "flaked almonds",
+      "tags": "almonds,tree nuts,nuts",
+      "type": "nuts"
+    },
+    {
+      "name": "chilled butter",
+      "tags": "butter,cooking fat",
+      "type": "cooking fat"
+    },
+    {
+      "name": "cold water",
+      "tags": "water,drink",
+      "type": "drink"
+    },
+    {
+      "name": "raspberry jam",
+      "tags": "raspberry jam,jam,fruit spread,spread,menu item type",
+      "type": "menu item type"
+    },
+    {
+      "name": "free-range egg, beaten",
+      "tags": "egg",
+      "type": "egg"
+    },
+    {
+      "name": "Banana",
+      "tags": "banana,tropical fruit,fruit,flavor",
+      "type": "flavor"
+    },
+    {
+      "name": "Vanilla Extract",
+      "tags": "vanilla extract,extract",
+      "type": "extract"
+    },
+    {
+      "name": "Pecan Nuts",
+      "tags": "pecans,tree nuts,nuts",
+      "type": "nuts"
+    },
+    {
+      "name": "Raspberries",
+      "tags": "raspberries,berries,fruit,flavor",
+      "type": "flavor"
+    },
+    {
+      "name": "Self-raising Flour",
+      "tags": "self rising flour,wheat flour,flour product",
+      "type": "flour product"
+    },
+    {
+      "name": "Almonds",
+      "tags": "almonds,tree nuts,nuts",
+      "type": "nuts"
+    },
+    {
+      "name": "Almond Extract",
+      "tags": "almond extract,extract",
+      "type": "extract"
+    },
+    {
+      "name": "Pink Food Colouring",
+      "tags": "food color,additive",
+      "type": "additive"
+    },
+    {
+      "name": "Apricot",
+      "tags": "apricot,fruit,flavor",
+      "type": "flavor"
+    },
+    {
+      "name": "Marzipan",
+      "tags": "marzipan",
+      "type": "marzipan"
+    },
+    {
+      "name": "Icing Sugar",
+      "tags": "powdered sugar,sugar,added sugar,additive",
+      "type": "additive"
+    },
+    {
+      "name": "Yeast",
+      "tags": "yeast",
+      "type": "yeast"
+    },
+    {
+      "name": "Hazlenuts",
+      "tags": ""
+    },
+    {
+      "name": "Lemon Juice",
+      "tags": "lemon juice",
+      "type": "lemon juice"
+    },
+    {
+      "name": "Mint",
+      "tags": "mint,flavor",
+      "type": "flavor"
+    },
+    {
+      "name": "bread",
+      "tags": "bread,baked goods",
+      "type": "baked goods"
+    },
+    {
+      "name": "sultanas",
+      "tags": "golden raisins,raisins,dried fruit,fruit,flavor",
+      "type": "flavor"
+    },
+    {
+      "name": "double cream",
+      "tags": "double cream,cream",
+      "type": "cream"
+    },
+    {
+      "name": "eggs",
+      "tags": "egg",
+      "type": "egg"
+    },
+    {
+      "name": "nutmeg",
+      "tags": "nutmeg,spices",
+      "type": "spices"
+    },
+    {
+      "name": "Muscovado Sugar",
+      "tags": "muscovado sugar,raw sugar,unrefined sugar,granulated sugar,sugar,added sugar,additive",
+      "type": "additive"
+    },
+    {
+      "name": "Raisins",
+      "tags": "raisins,dried fruit,fruit,flavor",
+      "type": "flavor"
+    },
+    {
+      "name": "Single Cream",
+      "tags": "single cream,cream",
+      "type": "cream"
+    },
+    {
+      "name": "Walnuts",
+      "tags": "walnuts,tree nuts,nuts",
+      "type": "nuts"
+    },
+    {
+      "name": "Bicarbonate Of Soda",
+      "tags": "baking soda",
+      "type": "baking soda"
+    },
+    {
+      "name": "Cream Cheese",
+      "tags": "cream cheese,menu item type",
+      "type": "menu item type"
+    },
+    {
+      "name": "White Flour",
+      "tags": "all purpose flour,wheat flour,flour product",
+      "type": "flour product"
+    },
+    {
+      "name": "Dried Fruit",
+      "tags": "dried fruit,fruit,flavor",
+      "type": "flavor"
+    },
+    {
+      "name": "Dark Brown Soft Sugar",
+      "tags": "sugar,added sugar,additive",
+      "type": "additive"
+    },
+    {
+      "name": "Red Wine Jelly",
+      "tags": "jelly,fruit spread,spread,menu item type",
+      "type": "menu item type"
+    },
+    {
+      "name": "Maple Syrup",
+      "tags": "maple syrup,syrup",
+      "type": "syrup"
+    },
+    {
+      "name": "Light Brown Soft Sugar",
+      "tags": "sugar,added sugar,additive",
+      "type": "additive"
+    },
+    {
+      "name": "Dark Chocolate Chips",
+      "tags": "dark chocolate chips,chocolate chips,baking pieces",
+      "type": "baking pieces"
+    },
+    {
+      "name": "Cacao",
+      "tags": ""
+    },
+    {
+      "name": "Vanilla",
+      "tags": "vanilla,flavor",
+      "type": "flavor"
+    },
+    {
+      "name": "Plain chocolate",
+      "tags": "chocolate",
+      "type": "chocolate"
+    },
+    {
+      "name": "Granulated Sugar",
+      "tags": "granulated sugar,sugar,added sugar,additive",
+      "type": "additive"
+    },
+    {
+      "name": "Dark Chocolate",
+      "tags": "dark chocolate,chocolate",
+      "type": "chocolate"
+    },
+    {
+      "name": "Milk Chocolate",
+      "tags": "milk chocolate,chocolate",
+      "type": "chocolate"
+    },
+    {
+      "name": "Salted Butter",
+      "tags": "salted butter,butter,cooking fat",
+      "type": "cooking fat"
+    },
+    {
+      "name": "Cocoa",
+      "tags": "cocoa powder",
+      "type": "cocoa powder"
+    },
+    {
+      "name": "salted butter",
+      "tags": "salted butter,butter,cooking fat",
+      "type": "cooking fat"
+    },
+    {
+      "name": "dark soft brown sugar",
+      "tags": "brown sugar,sugar,added sugar,additive",
+      "type": "additive"
+    },
+    {
+      "name": "golden syrup",
+      "tags": "golden syrup",
+      "type": "golden syrup"
+    },
+    {
+      "name": "orange",
+      "tags": "orange,citrus fruit,fruit,flavor",
+      "type": "flavor"
+    },
+    {
+      "name": "rolled oats",
+      "tags": "rolled oats,oats,grains",
+      "type": "grains"
+    },
+    {
+      "name": "Christmas pudding",
+      "tags": "pudding,dessert",
+      "type": "dessert"
+    },
+    {
+      "name": "Orange",
+      "tags": "orange,citrus fruit,fruit,flavor",
+      "type": "flavor"
+    },
+    {
+      "name": "Apricot Jam",
+      "tags": "apricot jam,jam,fruit spread,spread,menu item type",
+      "type": "menu item type"
+    },
+    {
+      "name": "Ground Almonds",
+      "tags": "almond meal",
+      "type": "almond meal"
+    },
+    {
+      "name": "Glace Cherry",
+      "tags": "candied cherries,candied fruit",
+      "type": "candied fruit"
+    },
+    {
+      "name": "Currants",
+      "tags": "currants,berries,fruit,flavor",
+      "type": "flavor"
+    },
+    {
+      "name": "Mixed Peel",
+      "tags": "candied orange peel",
+      "type": "candied orange peel"
+    },
+    {
+      "name": "strawberries",
+      "tags": "strawberries,berries,fruit,flavor",
+      "type": "flavor"
+    },
+    {
+      "name": "meringue nests",
+      "tags": ""
+    },
+    {
+      "name": "ginger cordial",
+      "tags": "liqueur,alcoholic drink,drink",
+      "type": "drink"
+    },
+    {
+      "name": "Chocolate Chips",
+      "tags": "chocolate chips,baking pieces",
+      "type": "baking pieces"
+    },
+    {
+      "name": "Condensed Milk",
+      "tags": "sweetened condensed milk",
+      "type": "sweetened condensed milk"
+    },
+    {
+      "name": "White Chocolate Chips",
+      "tags": "white chocolate chips,chocolate chips,baking pieces",
+      "type": "baking pieces"
+    },
+    {
+      "name": "Miniature Marshmallows",
+      "tags": "mini marshmallows,marshmallows",
+      "type": "marshmallows"
+    },
+    {
+      "name": "Raspberry Jam",
+      "tags": "raspberry jam,jam,fruit spread,spread,menu item type",
+      "type": "menu item type"
+    },
+    {
+      "name": "Custard",
+      "tags": "custard,dessert",
+      "type": "dessert"
+    },
+    {
+      "name": "Digestive Biscuits",
+      "tags": "digestive biscuits,cookies,dessert",
+      "type": "dessert"
+    },
+    {
+      "name": "Desiccated Coconut",
+      "tags": "desiccated coconut,dried coconut,coconut,flavor",
+      "type": "flavor"
+    },
+    {
+      "name": "Custard Powder",
+      "tags": "custard powder,dessert mix",
+      "type": "dessert mix"
+    },
+    {
+      "name": "Blueberries",
+      "tags": "blueberries,berries,fruit,flavor",
+      "type": "flavor"
+    },
+    {
+      "name": "Golden Syrup",
+      "tags": "golden syrup",
+      "type": "golden syrup"
+    },
+    {
+      "name": "Black Treacle",
+      "tags": "black treacle,molasses,unrefined sweetener,sweetener",
+      "type": "sweetener"
+    },
+    {
+      "name": "Oatmeal",
+      "tags": "oatmeal,hot cereal,breakfast",
+      "type": "breakfast"
+    },
+    {
+      "name": "Ground Ginger",
+      "tags": "ginger powder,ginger,spices",
+      "type": "spices"
+    },
+    {
+      "name": "Peaches",
+      "tags": "peach,fruit,flavor",
+      "type": "flavor"
+    },
+    {
+      "name": "Peanut Cookies",
+      "tags": "cookies,dessert",
+      "type": "dessert"
+    },
+    {
+      "name": "Gelatine Leafs",
+      "tags": "sheet gelatin,gelatin",
+      "type": "gelatin"
+    },
+    {
+      "name": "Ricotta",
+      "tags": "ricotta cheese,soft cheese,cheese",
+      "type": "cheese"
+    },
+    {
+      "name": "Peanut Brittle",
+      "tags": "brittle,dessert",
+      "type": "dessert"
+    },
+    {
+      "name": "Pears",
+      "tags": "pear,fruit,flavor",
+      "type": "flavor"
+    },
+    {
+      "name": "Star Anise",
+      "tags": "star anise,spices",
+      "type": "spices"
+    },
+    {
+      "name": "Pumpkin",
+      "tags": "pumpkin,squash,vegetable",
+      "type": "vegetable"
+    },
+    {
+      "name": "Pretzels",
+      "tags": "pretzels",
+      "type": "pretzels"
+    },
+    {
+      "name": "Caramel",
+      "tags": "caramel,flavor",
+      "type": "flavor"
+    },
+    {
+      "name": "Caramel Sauce",
+      "tags": "caramel sauce,caramel,flavor",
+      "type": "flavor"
+    },
+    {
+      "name": "Toffee Popcorn",
+      "tags": "popcorn,fingerfood,appetizer",
+      "type": "appetizer"
+    },
+    {
+      "name": "Medjool dates",
+      "tags": "medjool dates,dates,dried fruit,fruit,flavor",
+      "type": "flavor"
+    },
+    {
+      "name": "vanilla extract",
+      "tags": "vanilla extract,extract",
+      "type": "extract"
+    },
+    {
+      "name": "self-raising flour",
+      "tags": "self rising flour,wheat flour,flour product",
+      "type": "flour product"
+    },
+    {
+      "name": "bicarbonate of soda",
+      "tags": "baking soda",
+      "type": "baking soda"
+    },
+    {
+      "name": "demerara sugar",
+      "tags": "demerara sugar,raw sugar,unrefined sugar,granulated sugar,sugar,added sugar,additive",
+      "type": "additive"
+    },
+    {
+      "name": "black treacle",
+      "tags": "black treacle,molasses,unrefined sweetener,sweetener",
+      "type": "sweetener"
+    },
+    {
+      "name": "ice cream",
+      "tags": "ice cream,frozen dessert,dessert",
+      "type": "dessert"
+    },
+    {
+      "name": "muscovado sugar",
+      "tags": "muscovado sugar,raw sugar,unrefined sugar,granulated sugar,sugar,added sugar,additive",
+      "type": "additive"
+    },
+    {
+      "name": "Strawberries",
+      "tags": "strawberries,berries,fruit,flavor",
+      "type": "flavor"
+    },
+    {
+      "name": "Blackberries",
+      "tags": "blackberries,berries,fruit,flavor",
+      "type": "flavor"
+    },
+    {
+      "name": "Redcurrants",
+      "tags": "red currants,currants,berries,fruit,flavor",
+      "type": "flavor"
+    },
+    {
+      "name": "Breadcrumbs",
+      "tags": "breadcrumbs",
+      "type": "breadcrumbs"
+    },
+    {
+      "name": "Fries",
+      "tags": "french fries",
+      "type": "french fries"
+    },
+    {
+      "name": "Doner Meat",
+      "tags": "meat,animal product",
+      "type": "animal product"
+    },
+    {
+      "name": "Garlic sauce",
+      "tags": "sauce",
+      "type": "sauce"
+    },
+    {
+      "name": "Lettuce",
+      "tags": "lettuce,greens,vegetable",
+      "type": "vegetable"
+    },
+    {
+      "name": "Cucumber",
+      "tags": "cucumber,vegetable",
+      "type": "vegetable"
+    },
+    {
+      "name": "Gouda cheese",
+      "tags": "gouda,cheese",
+      "type": "cheese"
+    },
+    {
+      "name": "Lamb Shoulder",
+      "tags": "lamb shoulder,lamb,red meat,meat,animal product",
+      "type": "animal product"
+    },
+    {
+      "name": "Vegetable Stock",
+      "tags": "vegetable stock,stock",
+      "type": "stock"
+    },
+    {
+      "name": "Cashew nuts",
+      "tags": "cashews,tree nuts,nuts",
+      "type": "nuts"
+    },
+    {
+      "name": "Khus khus",
+      "tags": ""
+    },
+    {
+      "name": "Ginger garlic paste",
+      "tags": "ginger garlic paste",
+      "type": "ginger garlic paste"
+    },
+    {
+      "name": "Cilantro",
+      "tags": "cilantro,herbs",
+      "type": "herbs"
+    },
+    {
+      "name": "Saffron",
+      "tags": "saffron,spices",
+      "type": "spices"
+    },
+    {
+      "name": "Ghee",
+      "tags": "ghee,clarified butter,cooking fat",
+      "type": "cooking fat"
+    },
+    {
+      "name": "Basmati rice",
+      "tags": "basmati rice,long grain rice,rice,grains",
+      "type": "grains"
+    },
+    {
+      "name": "Full fat yogurt",
+      "tags": "yogurt,breakfast",
+      "type": "breakfast"
+    },
+    {
+      "name": "Cumin Seeds",
+      "tags": "cumin seeds,cumin,spices",
+      "type": "spices"
+    },
+    {
+      "name": "Bay leaf",
+      "tags": "bay leaves,herbs",
+      "type": "herbs"
+    },
+    {
+      "name": "Lamb",
+      "tags": "lamb,red meat,meat,animal product",
+      "type": "animal product"
+    },
+    {
+      "name": "Red Chilli powder",
+      "tags": "chili powder,spices",
+      "type": "spices"
+    },
+    {
+      "name": "Biryani masala",
+      "tags": "biryani,main dish",
+      "type": "main dish"
+    },
+    {
+      "name": "Madras Paste",
+      "tags": ""
+    },
+    {
+      "name": "cinnamon stick",
+      "tags": "cinnamon stick,cinnamon,spices",
+      "type": "spices"
+    },
+    {
+      "name": "Clove",
+      "tags": "clove,spices",
+      "type": "spices"
+    },
+    {
+      "name": "Tomato Purée",
+      "tags": "tomato,vegetable",
+      "type": "vegetable"
+    },
+    {
+      "name": "Lamb Leg",
+      "tags": "lamb,red meat,meat,animal product",
+      "type": "animal product"
+    },
+    {
+      "name": "Vegetable Stock Cube",
+      "tags": "vegetable bouillon cube,bouillon cube",
+      "type": "bouillon cube"
+    },
+    {
+      "name": "Butternut Squash",
+      "tags": "butternut squash,winter squash,squash,vegetable",
+      "type": "vegetable"
+    },
+    {
+      "name": "Green Chilli",
+      "tags": "green chili pepper,chili pepper,peppers,vegetable",
+      "type": "vegetable"
+    },
+    {
+      "name": "Lamb Mince",
+      "tags": "ground lamb,lamb,red meat,meat,animal product",
+      "type": "animal product"
+    },
+    {
+      "name": "Lard",
+      "tags": "lard,pork fat,cooking fat",
+      "type": "cooking fat"
+    },
+    {
+      "name": "Italian fennel sausages",
+      "tags": "sausage,processed meat,meat,animal product",
+      "type": "animal product"
+    },
+    {
+      "name": "smoky paprika",
+      "tags": "paprika,spices",
+      "type": "spices"
+    },
+    {
+      "name": "fennel seeds",
+      "tags": "fennel seeds,spices",
+      "type": "spices"
+    },
+    {
+      "name": "red wine",
+      "tags": "red wine,wine,alcoholic drink,drink",
+      "type": "drink"
+    },
+    {
+      "name": "chopped tomatoes",
+      "tags": "tomato,vegetable",
+      "type": "vegetable"
+    },
+    {
+      "name": "pitted black olives",
+      "tags": "black olives,olives",
+      "type": "olives"
+    },
+    {
+      "name": "rigatoni",
+      "tags": "rigatoni,pasta",
+      "type": "pasta"
+    },
+    {
+      "name": "pecorino",
+      "tags": "pecorino,cheese",
+      "type": "cheese"
+    },
+    {
+      "name": "anchovy fillet",
+      "tags": "anchovy fillets,anchovies,fish,animal product",
+      "type": "animal product"
+    },
+    {
+      "name": "basil leaves",
+      "tags": "fresh basil,basil,herbs",
+      "type": "herbs"
+    },
+    {
+      "name": "Tomato Sauce",
+      "tags": "tomato sauce,red sauce,sauce",
+      "type": "sauce"
+    },
+    {
+      "name": "Butter Beans",
+      "tags": "butter beans,beans,legumes",
+      "type": "legumes"
+    },
+    {
+      "name": "Kale",
+      "tags": "kale,greens,vegetable",
+      "type": "vegetable"
+    },
+    {
+      "name": "Duck Legs",
+      "tags": "duck leg,duck,poultry,meat,animal product",
+      "type": "animal product"
+    },
+    {
+      "name": "Carrot",
+      "tags": "carrot,root vegetable,vegetable",
+      "type": "vegetable"
+    },
+    {
+      "name": "French Lentils",
+      "tags": "lentils,legumes",
+      "type": "legumes"
+    },
+    {
+      "name": "Tarragon",
+      "tags": "tarragon,herbs",
+      "type": "herbs"
+    },
+    {
+      "name": "Gruyère",
+      "tags": ""
+    },
+    {
+      "name": "Veal",
+      "tags": "veal,meat,animal product",
+      "type": "animal product"
+    },
+    {
+      "name": "Fennel",
+      "tags": "fennel,vegetable",
+      "type": "vegetable"
+    },
+    {
+      "name": "Orange Zest",
+      "tags": "orange zest",
+      "type": "orange zest"
+    },
+    {
+      "name": "Marjoram",
+      "tags": "marjoram,herbs",
+      "type": "herbs"
+    },
+    {
+      "name": "Lemon Zest",
+      "tags": "lemon zest",
+      "type": "lemon zest"
+    },
+    {
+      "name": "Beef Gravy",
+      "tags": "beef gravy,gravy,sauce",
+      "type": "sauce"
+    },
+    {
+      "name": "Cheese Curds",
+      "tags": "cheese curds",
+      "type": "cheese curds"
+    },
+    {
+      "name": "Cayenne Pepper",
+      "tags": "cayenne pepper",
+      "type": "cayenne pepper"
+    },
+    {
+      "name": "Goats Cheese",
+      "tags": "goat cheese,cheese",
+      "type": "cheese"
+    },
+    {
+      "name": "Turkey Mince",
+      "tags": "whole turkey,turkey,poultry,meat,animal product",
+      "type": "animal product"
+    },
+    {
+      "name": "Barbeque Sauce",
+      "tags": "barbecue sauce,grilling sauce,sauce",
+      "type": "sauce"
+    },
+    {
+      "name": "Cannellini Beans",
+      "tags": "cannellini beans,beans,legumes",
+      "type": "legumes"
+    },
+    {
+      "name": "Linguine Pasta",
+      "tags": "linguine,long pasta,pasta",
+      "type": "pasta"
+    },
+    {
+      "name": "Sugar Snap Peas",
+      "tags": "sugar snap peas,legumes",
+      "type": "legumes"
+    },
+    {
+      "name": "King Prawns",
+      "tags": "shrimp,shellfish,fish,animal product",
+      "type": "animal product"
+    },
+    {
+      "name": "Cherry Tomatoes",
+      "tags": "cherry tomato,tomato,vegetable",
+      "type": "vegetable"
+    },
+    {
+      "name": "Basil Leaves",
+      "tags": "fresh basil,basil,herbs",
+      "type": "herbs"
+    },
+    {
+      "name": "Fromage Frais",
+      "tags": ""
+    },
+    {
+      "name": "Clotted Cream",
+      "tags": "clotted cream,cream",
+      "type": "cream"
+    },
+    {
+      "name": "Parmesan Cheese",
+      "tags": "parmesan,hard cheese,cheese",
+      "type": "cheese"
+    },
+    {
+      "name": "Fettuccine",
+      "tags": "fettuccine,pasta",
+      "type": "pasta"
+    },
+    {
+      "name": "Macaroni",
+      "tags": "macaroni,pasta",
+      "type": "pasta"
+    },
+    {
+      "name": "Garlic powder",
+      "tags": "garlic powder,dehydrated garlic,spices",
+      "type": "spices"
+    },
+    {
+      "name": "Kosher salt",
+      "tags": "kosher salt,salt,mineral",
+      "type": "mineral"
+    },
+    {
+      "name": "Black pepper",
+      "tags": "black pepper,pepper,spices",
+      "type": "spices"
+    },
+    {
+      "name": "Cayenne pepper",
+      "tags": "cayenne pepper",
+      "type": "cayenne pepper"
+    },
+    {
+      "name": "Whole Milk",
+      "tags": "whole milk,milk,drink",
+      "type": "drink"
+    },
+    {
+      "name": "Monterey Jack Cheese",
+      "tags": "monterey jack cheese,cheese",
+      "type": "cheese"
+    },
+    {
+      "name": "Cheddar Cheese",
+      "tags": "cheddar cheese,cheese",
+      "type": "cheese"
+    },
+    {
+      "name": "Colby Jack Cheese",
+      "tags": "colby jack,cheese",
+      "type": "cheese"
+    },
+    {
+      "name": "Chopped Tomatoes",
+      "tags": "tomato,vegetable",
+      "type": "vegetable"
+    },
+    {
+      "name": "Lasagne Sheets",
+      "tags": "lasagne noodles,pasta",
+      "type": "pasta"
+    },
+    {
+      "name": "Mozzarella Balls",
+      "tags": "bocconcini,mozzarella,cheese",
+      "type": "cheese"
+    },
+    {
+      "name": "Spaghetti",
+      "tags": "spaghetti,long pasta,pasta",
+      "type": "pasta"
+    },
+    {
+      "name": "Pilchards",
+      "tags": ""
+    },
+    {
+      "name": "Paccheri Pasta",
+      "tags": "pasta",
+      "type": "pasta"
+    },
+    {
+      "name": "Brussels Sprouts",
+      "tags": "brussels sprouts,vegetable",
+      "type": "vegetable"
+    },
+    {
+      "name": "Wood Ear Mushrooms",
+      "tags": "mushrooms",
+      "type": "mushrooms"
+    },
+    {
+      "name": "Pork",
+      "tags": "pork,red meat,meat,animal product",
+      "type": "animal product"
+    },
+    {
+      "name": "Vinegar",
+      "tags": "vinegar",
+      "type": "vinegar"
+    },
+    {
+      "name": "Fennel Seeds",
+      "tags": "fennel seeds,spices",
+      "type": "spices"
+    },
+    {
+      "name": "Red Wine Vinegar",
+      "tags": "red wine vinegar,wine vinegar,vinegar",
+      "type": "vinegar"
+    },
+    {
+      "name": "Haricot Beans",
+      "tags": "beans,legumes",
+      "type": "legumes"
+    },
+    {
+      "name": "sausages",
+      "tags": "sausage,processed meat,meat,animal product",
+      "type": "animal product"
+    },
+    {
+      "name": "horseradish",
+      "tags": "horseradish,condiment",
+      "type": "condiment"
+    },
+    {
+      "name": "cherry tomatoes",
+      "tags": "cherry tomato,tomato,vegetable",
+      "type": "vegetable"
+    },
+    {
+      "name": "Minced Pork",
+      "tags": "ground pork,pork,red meat,meat,animal product",
+      "type": "animal product"
+    },
+    {
+      "name": "Rice Vermicelli",
+      "tags": "rice vermicelli,rice noodles,pasta",
+      "type": "pasta"
+    },
+    {
+      "name": "Egg Rolls",
+      "tags": "egg rolls,appetizer",
+      "type": "appetizer"
+    },
+    {
+      "name": "Wonton Skin",
+      "tags": "wontons,appetizer",
+      "type": "appetizer"
+    },
+    {
+      "name": "cajun",
+      "tags": ""
+    },
+    {
+      "name": "cayenne pepper",
+      "tags": "cayenne pepper",
+      "type": "cayenne pepper"
+    },
+    {
+      "name": "white fish",
+      "tags": "white fish,fish,animal product",
+      "type": "animal product"
+    },
+    {
+      "name": "flour tortilla",
+      "tags": "flour tortilla,tortilla,wrap",
+      "type": "wrap"
+    },
+    {
+      "name": "avocado",
+      "tags": "avocado",
+      "type": "avocado"
+    },
+    {
+      "name": "little gem lettuce",
+      "tags": "lettuce,greens,vegetable",
+      "type": "vegetable"
+    },
+    {
+      "name": "spring onion",
+      "tags": "spring onions,onion",
+      "type": "onion"
+    },
+    {
+      "name": "salsa",
+      "tags": "salsa,dip,appetizer",
+      "type": "appetizer"
+    },
+    {
+      "name": "sour cream",
+      "tags": "sour cream",
+      "type": "sour cream"
+    },
+    {
+      "name": "lemon",
+      "tags": "lemon,citrus fruit,fruit,flavor",
+      "type": "flavor"
+    },
+    {
+      "name": "Red Snapper",
+      "tags": "red snapper,snapper,fish,animal product",
+      "type": "animal product"
+    },
+    {
+      "name": "Yellow Pepper",
+      "tags": "yellow pepper,bell pepper,sweet pepper,peppers,vegetable",
+      "type": "vegetable"
+    },
+    {
+      "name": "Malt Vinegar",
+      "tags": "malt vinegar,vinegar",
+      "type": "vinegar"
+    },
+    {
+      "name": "Floury Potatoes",
+      "tags": "potato",
+      "type": "potato"
+    },
+    {
+      "name": "Semi-skimmed Milk",
+      "tags": "2 percent milk,milk,drink",
+      "type": "drink"
+    },
+    {
+      "name": "White Fish Fillets",
+      "tags": "white fish fillets,white fish,fish,animal product",
+      "type": "animal product"
+    },
+    {
+      "name": "Plain flour",
+      "tags": "all purpose flour,wheat flour,flour product",
+      "type": "flour product"
+    },
+    {
+      "name": "Jerusalem Artichokes",
+      "tags": "jerusalem artichoke,root vegetable,vegetable",
+      "type": "vegetable"
+    },
+    {
+      "name": "Prawns",
+      "tags": "shrimp,shellfish,fish,animal product",
+      "type": "animal product"
+    },
+    {
+      "name": "Fish Stock",
+      "tags": "fish stock,stock",
+      "type": "stock"
+    },
+    {
+      "name": "Mussels",
+      "tags": "mussels,appetizer",
+      "type": "appetizer"
+    },
+    {
+      "name": "White Fish",
+      "tags": "white fish,fish,animal product",
+      "type": "animal product"
+    },
+    {
+      "name": "Raw king prawns",
+      "tags": "shrimp,shellfish,fish,animal product",
+      "type": "animal product"
+    },
+    {
+      "name": "Chopped onion",
+      "tags": "onion",
+      "type": "onion"
+    },
+    {
+      "name": "Freshly chopped parsley",
+      "tags": "parsley,herbs",
+      "type": "herbs"
+    },
+    {
+      "name": "White wine",
+      "tags": "white wine,wine,alcoholic drink,drink",
+      "type": "drink"
+    },
+    {
+      "name": "Chopped tomatoes",
+      "tags": "tomato,vegetable",
+      "type": "vegetable"
+    },
+    {
+      "name": "Minced garlic",
+      "tags": "minced garlic,garlic",
+      "type": "garlic"
+    },
+    {
+      "name": "Cubed Feta cheese",
+      "tags": "feta cheese,sheep cheese,cheese",
+      "type": "cheese"
+    },
+    {
+      "name": "Salmon",
+      "tags": "salmon,fish,animal product",
+      "type": "animal product"
+    },
+    {
+      "name": "Sesame Seed",
+      "tags": "sesame seeds,seeds",
+      "type": "seeds"
+    },
+    {
+      "name": "Smoked Haddock",
+      "tags": "smoked haddock,haddock,fish,animal product",
+      "type": "animal product"
+    },
+    {
+      "name": "Chilli",
+      "tags": "chili,stew,soup",
+      "type": "soup"
+    },
+    {
+      "name": "red chili",
+      "tags": "red chili pepper,chili pepper,peppers,vegetable",
+      "type": "vegetable"
+    },
+    {
+      "name": "Thai red curry paste",
+      "tags": "thai red curry paste,red curry paste,curry paste,spices",
+      "type": "spices"
+    },
+    {
+      "name": "vegetable stock cube",
+      "tags": "vegetable bouillon cube,bouillon cube",
+      "type": "bouillon cube"
+    },
+    {
+      "name": "fish sauce",
+      "tags": "fish sauce,condiment",
+      "type": "condiment"
+    },
+    {
+      "name": "rice noodles",
+      "tags": "rice noodles,pasta",
+      "type": "pasta"
+    },
+    {
+      "name": "king prawns",
+      "tags": "shrimp,shellfish,fish,animal product",
+      "type": "animal product"
+    },
+    {
+      "name": "Mackerel",
+      "tags": "mackerel,fish,animal product",
+      "type": "animal product"
+    },
+    {
+      "name": "Red Chili",
+      "tags": "red chili pepper,chili pepper,peppers,vegetable",
+      "type": "vegetable"
+    },
+    {
+      "name": "Turmeric",
+      "tags": "turmeric,natural food coloring,food color,additive",
+      "type": "additive"
+    },
+    {
+      "name": "Tamarind ball",
+      "tags": "tamarind",
+      "type": "tamarind"
+    },
+    {
+      "name": "rice",
+      "tags": "rice,grains",
+      "type": "grains"
+    },
+    {
+      "name": "vegetable stock",
+      "tags": "vegetable stock,stock",
+      "type": "stock"
+    },
+    {
+      "name": "salmon",
+      "tags": "salmon,fish,animal product",
+      "type": "animal product"
+    },
+    {
+      "name": "asparagus",
+      "tags": "asparagus,vegetable",
+      "type": "vegetable"
+    },
+    {
+      "name": "Salt Cod",
+      "tags": "salt cod,cod,fish,animal product",
+      "type": "animal product"
+    },
+    {
+      "name": "Ackee",
+      "tags": "ackee,tropical fruit,fruit,flavor",
+      "type": "flavor"
+    },
+    {
+      "name": "Vermicelli",
+      "tags": ""
+    },
+    {
+      "name": "Monkfish",
+      "tags": "monkfish,fish,animal product",
+      "type": "animal product"
+    },
+    {
+      "name": "Baby Squid",
+      "tags": "squid,seafood",
+      "type": "seafood"
+    },
+    {
+      "name": "Rice Stick Noodles",
+      "tags": "pasta",
+      "type": "pasta"
+    },
+    {
+      "name": "Haddock",
+      "tags": "haddock,fish,animal product",
+      "type": "animal product"
+    },
+    {
+      "name": "Capers",
+      "tags": "capers",
+      "type": "capers"
+    },
+    {
+      "name": "Tuna",
+      "tags": "tuna,fish,animal product",
+      "type": "animal product"
+    },
+    {
+      "name": "Brie",
+      "tags": "brie,cheese",
+      "type": "cheese"
+    },
+    {
+      "name": "Prosciutto",
+      "tags": "prosciutto",
+      "type": "prosciutto"
+    },
+    {
+      "name": "Tiger Prawns",
+      "tags": "tiger shrimp,shrimp,shellfish,fish,animal product",
+      "type": "animal product"
+    },
+    {
+      "name": "Frozen Peas",
+      "tags": "peas,legumes",
+      "type": "legumes"
+    },
+    {
+      "name": "Stilton Cheese",
+      "tags": "stilton,British cheese,cheese",
+      "type": "cheese"
+    },
+    {
+      "name": "Clams",
+      "tags": "clams,shellfish,fish,animal product",
+      "type": "animal product"
+    },
+    {
+      "name": "Cheese",
+      "tags": "cheese",
+      "type": "cheese"
+    },
+    {
+      "name": "Plum tomatoes",
+      "tags": "plum tomato,tomato,vegetable",
+      "type": "vegetable"
+    },
+    {
+      "name": "White Vinegar",
+      "tags": "distilled white vinegar,vinegar",
+      "type": "vinegar"
+    },
+    {
+      "name": "Basil",
+      "tags": "basil,herbs",
+      "type": "herbs"
+    },
+    {
+      "name": "Baby Aubergine",
+      "tags": "baby eggplant,eggplant,vegetable",
+      "type": "vegetable"
+    },
+    {
+      "name": "Courgettes",
+      "tags": "zucchini,summer squash,squash,vegetable",
+      "type": "vegetable"
+    },
+    {
+      "name": "Paella Rice",
+      "tags": "paella,main dish",
+      "type": "main dish"
+    },
+    {
+      "name": "self raising flour",
+      "tags": "self rising flour,wheat flour,flour product",
+      "type": "flour product"
+    },
+    {
+      "name": "coco sugar",
+      "tags": "coconut sugar,unrefined sugar,granulated sugar,sugar,added sugar,additive",
+      "type": "additive"
+    },
+    {
+      "name": "cacao",
+      "tags": ""
+    },
+    {
+      "name": "baking powder",
+      "tags": "baking powder",
+      "type": "baking powder"
+    },
+    {
+      "name": "flax eggs",
+      "tags": "flax egg",
+      "type": "flax egg"
+    },
+    {
+      "name": "almond milk",
+      "tags": "almond milk,nut milk,milk substitute",
+      "type": "milk substitute"
+    },
+    {
+      "name": "vanilla",
+      "tags": "vanilla,flavor",
+      "type": "flavor"
+    },
+    {
+      "name": "green red lentils",
+      "tags": "red lentils,lentils,legumes",
+      "type": "legumes"
+    },
+    {
+      "name": "zucchini",
+      "tags": "zucchini,summer squash,squash,vegetable",
+      "type": "vegetable"
+    },
+    {
+      "name": "spinach",
+      "tags": "spinach,greens,vegetable",
+      "type": "vegetable"
+    },
+    {
+      "name": "lasagne sheets",
+      "tags": "lasagne noodles,pasta",
+      "type": "pasta"
+    },
+    {
+      "name": "vegan butter",
+      "tags": "butter,cooking fat",
+      "type": "cooking fat"
+    },
+    {
+      "name": "flour",
+      "tags": "all purpose flour,wheat flour,flour product",
+      "type": "flour product"
+    },
+    {
+      "name": "soya milk",
+      "tags": "milk,drink",
+      "type": "drink"
+    },
+    {
+      "name": "mustard",
+      "tags": "mustard,condiment",
+      "type": "condiment"
+    },
+    {
+      "name": "vinegar",
+      "tags": "vinegar",
+      "type": "vinegar"
+    },
+    {
+      "name": "Aubergine",
+      "tags": "eggplant,vegetable",
+      "type": "vegetable"
+    },
+    {
+      "name": "Green Chili",
+      "tags": "green chili pepper,chili pepper,peppers,vegetable",
+      "type": "vegetable"
+    },
+    {
+      "name": "Red Chili Powder",
+      "tags": "chili powder,spices",
+      "type": "spices"
+    },
+    {
+      "name": "Coriander Leaves",
+      "tags": "coriander,herbs",
+      "type": "herbs"
+    },
+    {
+      "name": "Corn Tortillas",
+      "tags": "corn tortilla,tortilla,wrap",
+      "type": "wrap"
+    },
+    {
+      "name": "Toor dal",
+      "tags": "lentils,legumes",
+      "type": "legumes"
+    },
+    {
+      "name": "Mustard Seeds",
+      "tags": "mustard seeds,spices",
+      "type": "spices"
+    },
+    {
+      "name": "Garam Masala",
+      "tags": "garam masala,seasoning mix,seasoning",
+      "type": "seasoning"
+    },
+    {
+      "name": "Paneer",
+      "tags": "paneer,cheese",
+      "type": "cheese"
+    },
+    {
+      "name": "Naan Bread",
+      "tags": "naan,fingerfood,appetizer",
+      "type": "appetizer"
+    },
+    {
+      "name": "Chestnuts",
+      "tags": "chestnuts,tree nuts,nuts",
+      "type": "nuts"
+    },
+    {
+      "name": "Wild Mushrooms",
+      "tags": "mushrooms",
+      "type": "mushrooms"
+    },
+    {
+      "name": "Sage",
+      "tags": "sage,herbs",
+      "type": "herbs"
+    },
+    {
+      "name": "Truffle Oil",
+      "tags": "truffle oil,cooking oil,cooking fat",
+      "type": "cooking fat"
+    },
+    {
+      "name": "Rocket",
+      "tags": "arugula,greens,vegetable",
+      "type": "vegetable"
+    },
+    {
+      "name": "Canned tomatoes",
+      "tags": "canned tomatoes,tomato,vegetable",
+      "type": "vegetable"
+    },
+    {
+      "name": "Wholegrain Bread",
+      "tags": "bread,baked goods",
+      "type": "baked goods"
+    },
+    {
+      "name": "Red Onion",
+      "tags": "red onion,onion",
+      "type": "onion"
+    },
+    {
+      "name": "Brown Lentils",
+      "tags": "brown lentils,lentils,legumes",
+      "type": "legumes"
+    },
+    {
+      "name": "Apple Cider Vinegar",
+      "tags": "apple cider vinegar,vinegar",
+      "type": "vinegar"
+    },
+    {
+      "name": "Egg Plants",
+      "tags": "eggplant,vegetable",
+      "type": "vegetable"
+    },
+    {
+      "name": "Pine nuts",
+      "tags": "pine nuts,seeds",
+      "type": "seeds"
+    },
+    {
+      "name": "Chili Powder",
+      "tags": "chili powder,spices",
+      "type": "spices"
+    },
+    {
+      "name": "Dried Oregano",
+      "tags": "dried oregano,dried herbs,herbs",
+      "type": "herbs"
+    },
+    {
+      "name": "Diced Tomatoes",
+      "tags": "tomato,vegetable",
+      "type": "vegetable"
+    },
+    {
+      "name": "Cashews",
+      "tags": "cashews,tree nuts,nuts",
+      "type": "nuts"
+    },
+    {
+      "name": "Baguette",
+      "tags": "baguette,bread,baked goods",
+      "type": "baked goods"
+    },
+    {
+      "name": "Vine Tomatoes",
+      "tags": "tomato,vegetable",
+      "type": "vegetable"
+    },
+    {
+      "name": "penne rigate",
+      "tags": "penne,pasta",
+      "type": "pasta"
+    },
+    {
+      "name": "red chile flakes",
+      "tags": "red pepper flakes,spices",
+      "type": "spices"
+    },
+    {
+      "name": "italian seasoning",
+      "tags": "italian seasoning,dried herbs,herbs",
+      "type": "herbs"
+    },
+    {
+      "name": "Parmigiano-Reggiano",
+      "tags": "parmigiano reggiano,parmesan,hard cheese,cheese",
+      "type": "cheese"
+    },
+    {
+      "name": "Small Potatoes",
+      "tags": "potato",
+      "type": "potato"
+    },
+    {
+      "name": "Spring onions",
+      "tags": "spring onions,onion",
+      "type": "onion"
+    },
+    {
+      "name": "Feta",
+      "tags": "feta cheese,sheep cheese,cheese",
+      "type": "cheese"
+    },
+    {
+      "name": "Mascarpone",
+      "tags": "mascarpone,soft cheese,cheese",
+      "type": "cheese"
+    },
+    {
+      "name": "Mozzarella",
+      "tags": "mozzarella,cheese",
+      "type": "cheese"
+    },
+    {
+      "name": "Harissa",
+      "tags": "harissa",
+      "type": "harissa"
+    },
+    {
+      "name": "Ground cumin",
+      "tags": "ground cumin,cumin,spices",
+      "type": "spices"
+    },
+    {
+      "name": "Tahini",
+      "tags": "tahini",
+      "type": "tahini"
+    },
+    {
+      "name": "Lentils",
+      "tags": "lentils,legumes",
+      "type": "legumes"
+    },
+    {
+      "name": "Roasted Vegetables",
+      "tags": "roasted vegetables,side dish",
+      "type": "side dish"
+    },
+    {
+      "name": "Mixed Grain",
+      "tags": "grains",
+      "type": "grains"
+    },
+    {
+      "name": "Udon Noodles",
+      "tags": "udon noodles,pasta",
+      "type": "pasta"
+    },
+    {
+      "name": "Cabbage",
+      "tags": "cabbage,vegetable",
+      "type": "vegetable"
+    },
+    {
+      "name": "Shiitake Mushrooms",
+      "tags": "shiitake mushrooms,fresh mushrooms,mushrooms",
+      "type": "mushrooms"
+    },
+    {
+      "name": "Mirin",
+      "tags": "mirin,rice wine,alcoholic drink,drink",
+      "type": "drink"
+    }
+  ]
+}

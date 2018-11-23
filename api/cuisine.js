@@ -4,8 +4,8 @@ const router = express.Router();
 
 router.get('/', (req, res, next) => { 
 
-  findAllNodes(Models.Ingredient)
-    .then(ingredients => res.send(ingredients))
+  findAllNodes(Models.Cuisine)
+    .then(cuisine => res.send(cuisine))
     .catch(next);
 
 });

@@ -1,23 +1,65 @@
-const fs = require('fs');
-const path = require('path');
 const express = require('express');
+const { findAllNodes, findNode, findRelationships, Models, Relationships, findConditionalNodes } = require('../db')
 const router = express.Router();
 
-router.get('/', (req, res, next) => { 
-
-  //TO DO - Get it from DB when ready
-  const recipes = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'json/recipes.json'))).recipes;
-  res.send(recipes);
+router.post('/ingredients/', (req, res, next) => { 
+  const list = req.body.ingredients;
+  findConditionalNodes(Models.Recipe, 
+      `t.name IN [${list.split(',').map(i => `'${i.trim()}'`).join(',')}]`, 
+      Relationships.HAS_INGREDIENT, 
+      'direction_out', 
+      Models.Ingredient
+    ).then(recipes => res.send(recipes))
+    .catch(next);
 
 });
 
 router.get('/:id', (req, res, next) => { 
 
-  //TO DO - Get it from DB when ready
-  const recipes = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'json/recipes.json'))).recipes;
-  const result = recipes.find(recipe => recipe.id == req.params.id);
-  res.send(result);
-  
-  });
+  let result;
+  findNode(Models.Recipe, {id: req.params.id })
+    .then(recipe => {
+      result = recipe;
+      return findRelationships(Models.Recipe, `n.id='${recipe.id}'`, Relationships.POSTED_BY, 'direction_out', Models.User)
+    })
+    .then(postedBy => {
+      result = {...result, postedBy}
+    })
+    .then(() => {
+      return findRelationships(Models.Recipe, `n.id='${result.id}'`, Relationships.HAS_REVIEW, 'direction_out', Models.Review)
+    })
+    .then(reviews => {
+      result = {...result, reviews}
+    })
+    .then(() => {
+      return findRelationships(Models.Recipe, `n.id='${result.id}'`, Relationships.IS_OF_CATEGORY, 'direction_out', Models.Category)
+    })
+    .then(category => {
+      result = {...result, category}
+    })
+    .then(() => {
+      return findRelationships(Models.Recipe, `n.id='${result.id}'`, Relationships.IS_OF_CUISINE, 'direction_out', Models.Cuisine)
+    })
+    .then(cuisine => {
+      result = {...result, cuisine}
+    })
+    .then(() => {
+      return findRelationships(Models.Recipe, `n.id='${result.id}'`, Relationships.HAS_INGREDIENT, 'direction_out', Models.Ingredient)
+    })
+    .then(ingredients => {
+      result = {...result, ingredients}
+    })
+    .then(() => res.send(result))
+    .catch(next);
 
-  module.exports = router;
+});
+
+router.get('/', (req, res, next) => { 
+
+  findAllNodes(Models.Recipe)
+    .then(recipes => res.send(recipes))
+    .catch(next);
+
+});
+
+module.exports = router;

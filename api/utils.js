@@ -1,6 +1,5 @@
-const fs = require('fs');
-const path = require('path');
 const jwt = require('jwt-simple');
+const { findNode, Models } = require('../db')
 
 const isAuthenticated = (req, res, next) => {
     
@@ -17,11 +16,12 @@ const isAuthenticated = (req, res, next) => {
     return next({ status: 401 });
   }
 
-  //TO DO - Get it from DB when ready
-  const users = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'json/users.json'))).users;
-  const user = users.find(user => user.id === id);
-  req.user = user;
-  next();
+  findNode(Models.User, { id })
+    .then(user => {
+        req.user = user;
+        next();
+    })
+    .catch(next);
   
 }
 

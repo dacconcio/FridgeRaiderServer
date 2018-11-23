@@ -1,31 +1,27 @@
 {
   "users": [
     {
-      "id": 1,
       "name": "Fridge Raider",
       "userName": "fridgeRaider",
       "password": "admin",
       "email": "fridgeRaider@email.com"
     },
     {
-      "id": 2,
-      "name": "Moe Doe",
-      "userName": "moe",
-      "password": "MOE",
-      "email": "moe@email.com"
+      "name": "John Doe",
+      "userName": "john",
+      "password": "doe",
+      "email": "john@email.com"
     },
     {
-      "id": 3,
-      "name": "Curly Smith",
-      "userName": "curly",
-      "password": "CURLY",
-      "email": "curly@email.com"
+      "name": "Adell Thom",
+      "userName": "adell",
+      "password": "thom",
+      "email": "adell@email.com"
     },
     {
-      "id": 4,
       "name": "Larry David",
       "userName": "larry",
-      "password": "LARRY",
+      "password": "david",
       "email": "larry@email.com"
     }
   ]
