@@ -20,6 +20,25 @@ const findNode = (model, params) => {
     });
 }
 
+const findConditionalNodes = (model, params, relation, direction, target) => { 
+
+  return neode.query()
+    .match('n', model)
+    .relationship(relation, direction, 'r')
+    .to('t', target)
+    .where(params)
+    .return('properties (n) as result')
+    .execute()
+    .then(data => data.records)
+    .then(result => {
+      let response = [];
+      if(result.length) {
+        response = result.map(element => element.toObject()['result'])
+      }
+      return response;
+    });
+}
+
 const findRelationships = (model, params, relation, direction, target) => {
   return neode.query()
     .match('n', model)
@@ -69,5 +88,6 @@ module.exports = {
   findNode,
   findRelationships,
   createRelationship,
-  deleteRelationship
+  deleteRelationship,
+  findConditionalNodes
 }

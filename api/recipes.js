@@ -1,6 +1,18 @@
 const express = require('express');
-const { findAllNodes, findNode, findRelationships, Models, Relationships } = require('../db')
+const { findAllNodes, findNode, findRelationships, Models, Relationships, findConditionalNodes } = require('../db')
 const router = express.Router();
+
+router.post('/ingredients/', (req, res, next) => { 
+  const list = req.body.ingredients;
+  findConditionalNodes(Models.Recipe, 
+      `t.name IN [${list.split(',').map(i => `'${i.trim()}'`).join(',')}]`, 
+      Relationships.HAS_INGREDIENT, 
+      'direction_out', 
+      Models.Ingredient
+    ).then(recipes => res.send(recipes))
+    .catch(next);
+
+});
 
 router.get('/:id', (req, res, next) => { 
 
