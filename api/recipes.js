@@ -1,5 +1,6 @@
 const express = require('express');
-const { findAllNodes, findNode, findRelationships, Models, Relationships, findConditionalNodes } = require('../db')
+const { findAllNodes, findNode, findRelationships, Models, Relationships, 
+  findConditionalNodes, createRelationship } = require('../db')
 const router = express.Router();
 
 router.post('/ingredients/', (req, res, next) => { 
@@ -60,6 +61,17 @@ router.get('/', (req, res, next) => {
     .then(recipes => res.send(recipes))
     .catch(next);
 
+});
+
+router.put('/:id/review/:userId', (req, res, next) => { 
+  const { rating, description } = req.body;
+  createRelationship(
+    { model: Models.Recipe, params: {id: req.params.id} },
+    { model: Models.User, params: {id: req.params.userId} },
+    Relationships.reviewedBy,
+    { rating, description }
+  ).then(() => res.sendStatus(204))
+  .catch(next);
 });
 
 module.exports = router;

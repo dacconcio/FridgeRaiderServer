@@ -71,14 +71,14 @@ const findRelationships = (model, params, relation, direction, target) => {
     });
 }
 
-const createRelationship = (source, target, relationship) => {
+const createRelationship = (source, target, relationship, properties) => {
   let sourceNode;
   return neode.first(source.model, source.params)
    .then( result => {
       sourceNode = result;
       return neode.first(target.model, target.params)
     }).then( targetNode => {
-      return sourceNode.relateTo(targetNode, relationship);
+      return sourceNode.relateTo(targetNode, relationship, properties);
     })
 }
 
