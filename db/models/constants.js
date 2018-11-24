@@ -5,8 +5,6 @@ const Review = 'Review';
 const IngredientType = 'IngredientType';
 const Ingredient = 'Ingredient';
 const Recipe = 'Recipe';
-const hasWritten = 'hasWritten';
-const HAS_WRITTEN = 'HAS_WRITTEN';
 const hasSaved = 'hasSaved';
 const HAS_SAVED = 'HAS_SAVED';
 const hasPosted = 'hasPosted';
@@ -14,8 +12,8 @@ const HAS_POSTED = 'HAS_POSTED';
 const isOfIngredientType = 'isOfIngredientType';
 const postedBy = 'postedBy';
 const POSTED_BY = 'POSTED_BY';
-const hasReview = 'hasReview';
-const HAS_REVIEW = 'HAS_REVIEW';
+const reviewedBy = 'reviewedBy';
+const REVIEWED_BY = 'REVIEWED_BY';
 const isOfCategory = 'isOfCategory';
 const IS_OF_CATEGORY = 'IS_OF_CATEGORY';
 const isOfCuisine = 'isOfCuisine';
@@ -36,8 +34,6 @@ module.exports = {
     Recipe
   },
   Relationships: {
-    hasWritten,
-    HAS_WRITTEN,
     hasSaved,
     HAS_SAVED,
     hasPosted,
@@ -45,8 +41,8 @@ module.exports = {
     isOfIngredientType,
     postedBy,
     POSTED_BY,
-    hasReview,
-    HAS_REVIEW,
+    reviewedBy,
+    REVIEWED_BY,
     isOfCategory,
     IS_OF_CATEGORY,
     isOfCuisine,

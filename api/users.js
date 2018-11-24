@@ -9,12 +9,6 @@ router.get('/:id', (req, res, next) => {
   findNode(Models.User, {id: req.params.id })
     .then(user => {
       result = user;
-      return findRelationships(Models.User, `n.id='${user.id}'`, Relationships.HAS_WRITTEN, 'direction_out', Models.Review)
-    })
-    .then(hasWrittenReviews => {
-      result = {...result, hasWrittenReviews}
-    })
-    .then(() => {
       return findRelationships(Models.User, `n.id='${result.id}'`, Relationships.HAS_SAVED, 'direction_out', Models.Recipe)
     })
     .then(savedRecipes => {

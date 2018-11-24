@@ -29,12 +29,6 @@ module.exports = {
     email: true,
     invalid: [''],
   },
-  hasWritten: {
-    type: 'relationship',
-    relationship: 'HAS_WRITTEN',
-    direction: 'out',
-    target: Models.Review,
-  },
   hasSaved: {
     type: 'relationship',
     relationship: 'HAS_SAVED',

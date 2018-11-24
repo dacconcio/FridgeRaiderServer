@@ -21,7 +21,6 @@ const sync = () => {
       neode.model(Models.User, require('./models/user'));
       neode.model(Models.Category, require('./models/category'));
       neode.model(Models.Cuisine, require('./models/cuisine'));
-      neode.model(Models.Review, require('./models/review'));
       neode.model(Models.IngredientType, require('./models/ingredientType'));
       neode.model(Models.Ingredient, require('./models/ingredient'));
       neode.model(Models.Recipe, require('./models/recipe'));
@@ -60,23 +59,20 @@ const seed = async () => {
     //Seed Recipes
     const recipes = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'json/recipes.json'))).recipes;
     for(let i = 0; i < recipes.length; i++) {
-        const review = await neode.create(Models.Review, { 
+        const review =  { 
           rating: faker.random.number({ min: 1, max: 5 }), 
           description: faker.lorem.paragraph() 
-        });
+        };
 
         const index = faker.random.number({ min: 0, max: 2 });
-        await rest[index].relateTo(review, Relationships.hasWritten);
-        //Check if need review (writtenBy) user?
-
-        await createRecipe(recipes[i], admin, review);
+        await createRecipe(recipes[i], admin, review, rest[index]);
     }
   } catch(error) {
       console.log(error);
   }
 }
 
-const createRecipe = async(recipe, postedByUser, review) => {
+const createRecipe = async(recipe, postedByUser, review, reviewedBy) => {
   const createdRecipe = await neode.create(Models.Recipe, 
     { name: recipe.name, 
       instructions: recipe.instructions, 
@@ -84,8 +80,7 @@ const createRecipe = async(recipe, postedByUser, review) => {
       videoUrl: recipe.video
     });
   
-  await createdRecipe.relateTo(review, Relationships.hasReview);  
-
+  await createdRecipe.relateTo(reviewedBy, Relationships.reviewedBy, review);  
   await createdRecipe.relateTo(postedByUser, Relationships.postedBy);
   await postedByUser.relateTo(createdRecipe, Relationships.hasPosted);
 

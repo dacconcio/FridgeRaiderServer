@@ -29,11 +29,21 @@ module.exports = {
     direction: 'out',
     target: Models.User,
   },
-  hasReview: {
+  reviewedBy: {
     type: 'relationship',
-    relationship: 'HAS_REVIEW',
+    relationship: 'REVIEWED_BY',
     direction: 'out',
-    target: Models.Review,
+    target: Models.User,
+    properties: {
+      rating: {
+        type: 'number',
+        required: true,
+      },
+      description: {
+        type: 'string',
+        required: true,
+      },
+    },
   },
   isOfCategory: {
     type: 'relationship',

@@ -26,7 +26,7 @@ router.get('/:id', (req, res, next) => {
       result = {...result, postedBy}
     })
     .then(() => {
-      return findRelationships(Models.Recipe, `n.id='${result.id}'`, Relationships.HAS_REVIEW, 'direction_out', Models.Review)
+      return findRelationships(Models.Recipe, `n.id='${result.id}'`, Relationships.REVIEWED_BY, 'direction_out', Models.User)
     })
     .then(reviews => {
       result = {...result, reviews}
