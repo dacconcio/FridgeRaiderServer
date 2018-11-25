@@ -39,6 +39,15 @@ const findConditionalNodes = (model, params, relation, direction, target) => {
     });
 }
 
+const createNode = (model, properties) => {
+  return neode.create(model, properties);
+}
+
+const updateNode = (model, params, properties) => {
+  return neode.first(model, params)
+    .then(node => node.update(properties));
+}
+
 const findRelationships = (model, params, relation, direction, target) => {
   return neode.query()
     .match('n', model)
@@ -62,14 +71,14 @@ const findRelationships = (model, params, relation, direction, target) => {
     });
 }
 
-const createRelationship = (source, target, relationship) => {
+const createRelationship = (source, target, relationship, properties) => {
   let sourceNode;
   return neode.first(source.model, source.params)
    .then( result => {
       sourceNode = result;
       return neode.first(target.model, target.params)
     }).then( targetNode => {
-      return sourceNode.relateTo(targetNode, relationship);
+      return sourceNode.relateTo(targetNode, relationship, properties);
     })
 }
 
@@ -89,5 +98,7 @@ module.exports = {
   findRelationships,
   createRelationship,
   deleteRelationship,
-  findConditionalNodes
+  findConditionalNodes,
+  createNode,
+  updateNode
 }

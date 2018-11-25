@@ -8,6 +8,7 @@ module.exports = {
   },
   name: {
     type: 'string',
+    unique: true,
     required: true,
     invalid: [''],
   },
