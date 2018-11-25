@@ -115,15 +115,7 @@ router.post('/', async (req, res, next) => {
     for(let i = 0; i < lines.length; i++) {
       const { quantity, unit, ingredient } = parse(lines[i]);
       let ingredientNode = await findNode(Models.Ingredient, { name: ingredient });
-      if(ingredientNode) {
-        await createRelationship(
-          { model: Models.Recipe, params: { name } },
-          { model: Models.Ingredient, params: { name: ingredient } },
-          Relationships.hasIngredient,
-          { measure: `${quantity} ${unit}`}
-        );
-      }
-      else 
+      if(!ingredientNode) 
       {
         const response = await axios.post(
           'https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/food/products/classify',
@@ -151,6 +143,12 @@ router.post('/', async (req, res, next) => {
           Relationships.isOfIngredientType
         );
       }
+      await createRelationship(
+        { model: Models.Recipe, params: { name } },
+        { model: Models.Ingredient, params: { name: ingredient } },
+        Relationships.hasIngredient,
+        { measure: `${quantity} ${unit}`}
+      );
     }
     res.sendStatus(201); 
   } 
