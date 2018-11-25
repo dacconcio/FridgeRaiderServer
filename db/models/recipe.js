@@ -19,9 +19,11 @@ module.exports = {
   },
   imageUrl: {
     type: 'string',
+    allow: [''],
   },
   videoUrl: {
     type: 'string',
+    allow: [''],
   },
   postedBy: {
     type: 'relationship',
