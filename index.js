@@ -9,9 +9,9 @@ const init = async() => {
     await db.seed();
     console.log("Syncing and Seeding Done");
   }
-  app.listen(PORT, () => console.log(`Listening on Port ${PORT}`));
 }
 
+app.listen(PORT, () => console.log(`Listening on Port ${PORT}`));
 init();
 
 
