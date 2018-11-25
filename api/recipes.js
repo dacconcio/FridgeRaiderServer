@@ -55,12 +55,31 @@ router.get('/:id', (req, res, next) => {
 
 });
 
-router.get('/', (req, res, next) => { 
+router.get('/', async (req, res, next) => { 
+  let recipes;
+  const ingredients = req.query.ingredients;
 
-  findAllNodes(Models.Recipe)
-    .then(recipes => res.send(recipes))
-    .catch(next);
-
+  try 
+  {
+    if(ingredients) 
+    {
+      recipes = await findConditionalNodes(Models.Recipe, 
+        `t.name IN [${ingredients.split(',').map(i => `'${i.trim()}'`).join(',')}]`, 
+        Relationships.HAS_INGREDIENT, 
+        'direction_out', 
+        Models.Ingredient
+      )
+    } 
+    else 
+    {
+      recipes = await findAllNodes(Models.Recipe)
+    }
+    res.send(recipes);
+  } 
+  catch(error) 
+  {
+    next(error);
+  }
 });
 
 router.put('/:id/review/:userId', (req, res, next) => { 

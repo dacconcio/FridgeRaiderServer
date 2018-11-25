@@ -58,7 +58,9 @@ const seed = async () => {
 
     //Seed Recipes
     const recipes = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'json/recipes.json'))).recipes;
-    for(let i = 0; i < recipes.length; i++) {
+    console.log(`Recipes Count: ${recipes.length}`);
+    console.log(`Recipes to upload: ${process.env.NO_OF_RECIPES_TO_UPLOAD}`)
+    for(let i = 0; i < process.env.NO_OF_RECIPES_TO_UPLOAD; i++) {
         const review =  { 
           rating: faker.random.number({ min: 1, max: 5 }), 
           description: faker.lorem.paragraph() 
