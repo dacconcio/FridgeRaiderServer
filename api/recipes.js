@@ -79,7 +79,7 @@ router.post('/', async (req, res, next) => {
   const videoUrl = req.body.videoUrl ? req.body.videoUrl : '';
   try 
   {
-    const createdRecipe = await createNode(Models.Recipe, { name, instructions, imageUrl, videoUrl });
+    await createNode(Models.Recipe, { name, instructions, imageUrl, videoUrl });
     await createRelationship(
       { model: Models.Recipe, params: { name } },
       { model: Models.User, params: { id: postedByUserId } },
@@ -150,7 +150,8 @@ router.post('/', async (req, res, next) => {
         { measure: `${quantity} ${unit}`}
       );
     }
-    res.sendStatus(201); 
+    const response = await findNode(Models.Recipe, { name })
+    res.redirect(`/api/recipes/${response.id}`); 
   } 
   catch(error) 
   {
@@ -165,7 +166,7 @@ router.put('/:id/review/:userId', (req, res, next) => {
     { model: Models.User, params: {id: req.params.userId} },
     Relationships.reviewedBy,
     { rating, description }
-  ).then(() => res.sendStatus(204))
+  ).then(() => res.redirect(303, `/api/recipes/${req.params.id}`))
   .catch(next);
 });
 
