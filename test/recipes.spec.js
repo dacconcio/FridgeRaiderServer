@@ -60,4 +60,13 @@ describe('Recipes Routes - /api/recipes/', () => {
       })
   });
 
+  it('Creates recipe', () => {
+    return findNode(Models.User, { userName: 'test' })
+      .then(user => {
+        return app.post('/api/recipes/')
+          .send({ name: "Test Recipe", instructions: "Test Instructions", postedByUserId: user.id, 
+            categoryName: "Lunch", cuisineName: "Indian", ingredients: "2 lb Chicken\n2 tsp Salt" })
+          .expect(302)
+      })
+  });
 });
