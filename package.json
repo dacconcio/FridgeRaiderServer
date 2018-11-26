@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "mocha test/*.spec.js",
+    "test": "GRAPHENEDB_BOLT_URL=bolt://localhost:7687/capstone GRAPHENEDB_BOLT_USER=neo4j GRAPHENEDB_BOLT_PASSWORD=capstone mocha test/*.spec.js --exit",
     "start:dev": "NO_OF_RECIPES_TO_UPLOAD=150 JWT_SECRET=capstone GRAPHENEDB_BOLT_URL=bolt://localhost:7687/capstone GRAPHENEDB_BOLT_USER=neo4j GRAPHENEDB_BOLT_PASSWORD=capstone SYNC_DB=true nodemon index.js"
   },
   "keywords": [],
