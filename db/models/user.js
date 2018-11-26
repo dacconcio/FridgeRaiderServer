@@ -29,6 +29,11 @@ module.exports = {
     email: true,
     invalid: [''],
   },
+  active: {
+    type: 'boolean',
+    required: true,
+    default: true,
+  },
   hasSaved: {
     type: 'relationship',
     relationship: 'HAS_SAVED',

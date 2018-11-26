@@ -7,7 +7,7 @@ const router = express.Router();
 router.post('/', (req, res, next) => { 
   const { userName, password } = req.body;
 
-  findNode(Models.User, { userName, password })
+  findNode(Models.User, { userName, password, active: true })
     .then( user => {
       if(!user) {
           return next({ status: 401 });
