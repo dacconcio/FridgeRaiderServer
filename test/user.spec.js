@@ -9,9 +9,9 @@ describe('User Routes - /api/users/', () => {
     return sync()
       .then(() => {
         return Promise.all([
-          createNode(Models.User, { name: 'Moe', userName: 'moe', password: 'moe', email: 'moe@email.com' }),
-          createNode(Models.User, { name: 'Curly', userName: 'curly', password: 'curly', email: 'curly@email.com' }),
-          createNode(Models.User, { name: 'Larry', userName: 'larry', password: 'larry', email: 'larry@email.com' }),
+          createNode(Models.User, { name: 'Moe', userName: 'moe', password: 'moe', email: 'moe@email.com', isAdmin: false }),
+          createNode(Models.User, { name: 'Curly', userName: 'curly', password: 'curly', email: 'curly@email.com', isAdmin: false }),
+          createNode(Models.User, { name: 'Larry', userName: 'larry', password: 'larry', email: 'larry@email.com', isAdmin: false }),
        ])
     });
   }); 
@@ -50,7 +50,7 @@ describe('User Routes - /api/users/', () => {
 
   it('Creates user', () => {
     return app.post('/api/users/')
-      .send({ name: 'Joe', userName: 'joe', password: 'joe', email: 'joe@email.com' })
+      .send({ name: 'Joe', userName: 'joe', password: 'joe', email: 'joe@email.com', isAdmin: false })
       .expect(302)
   });
 

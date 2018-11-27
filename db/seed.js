@@ -40,8 +40,9 @@ const seed = async () => {
     const users = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'json/users.json'))).users;
     const [ admin, ...rest ] = await Promise.all(
       users.map(user => 
-        neode.create(Models.User, { name: user.name, userName: user.userName, password: user.password, email: user.email })
+        neode.create(Models.User, { name: user.name, userName: user.userName, password: user.password, email: user.email, isAdmin: false })
       ));
+    admin.update({isAdmin: true});
 
     //Seed Ingredients
     const ingredients = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'json/ingredientsAndTypes.json'))).ingredients;
