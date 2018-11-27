@@ -111,6 +111,15 @@ const deleteRelationship = (source, target, params, relation, direction) => {
     .execute();
 }
 
+const deleteAllRelationships = (source, target, relation, direction) => {
+  return neode.query()
+    .match('n', source)
+    .relationship(relation, direction, 'r')
+    .to('t', target)
+    .delete('r')
+    .execute();
+}
+
 const saveRecipe = async ({ name, instructions, postedByUserId, categoryName, cuisineName, ingredients, imageUrl, videoUrl }) => { 
   try 
   {
@@ -162,13 +171,54 @@ const saveIngredients = async ({ quantity, unit, ingredient }, name) => {
       await createRelationship({ model: Models.Ingredient, params: { name: ingredient } },
         { model: Models.IngredientType, params: { name: type } }, Relationships.isOfIngredientType);
 
-      console.log(`New Ingredient created: ${{ name: ingredient, tags }}`)
+      console.log(`New Ingredient created. ${ingredient} : ${tags}`)
     }
     await createRelationship({ model: Models.Recipe, params: { name } },
       { model: Models.Ingredient, params: { name: ingredient } }, Relationships.hasIngredient,
       { measure: `${quantity} ${unit}`});
   }
   catch(error) {
+    console.log(error);
+    throw error;
+  }
+}
+
+const updateRecipe = async (id, categoryName, cuisineName, ingredients, properties ) => { 
+  try 
+  {
+    const updates = Object.keys(properties).reduce((updates, input) => {
+      if(properties[input]) {
+        updates[input] = properties[input];
+      }
+      return updates;
+    }, {});
+
+    if(updates) {
+      await updateNode(Models.Recipe, { id }, updates);
+    }
+
+    if(categoryName) {
+      await deleteAllRelationships(Models.Recipe, Models.Category, Relationships.IS_OF_CATEGORY, 'direction_out');
+      await createRelationship({ model: Models.Recipe, params: { id } },
+        { model: Models.Category, params: { name: categoryName } }, Relationships.isOfCategory);
+    }
+
+    if(cuisineName) {
+      await deleteAllRelationships(Models.Recipe, Models.Cuisine, Relationships.IS_OF_CUISINE, 'direction_out');
+      await createRelationship({ model: Models.Recipe, params: { id } },
+        { model: Models.Cuisine, params: { name: cuisineName } }, Relationships.isOfCuisine);
+    }
+
+    if(ingredients) {
+      await deleteAllRelationships(Models.Recipe, Models.Ingredient, Relationships.HAS_INGREDIENT, 'direction_out');
+      const lines = ingredients.match(/[^\r\n]+/g);
+      for(let i = 0; i < lines.length; i++) {
+        saveIngredients(parse(lines[i]), properties.name);
+      }
+    }
+  } 
+  catch(error) 
+  {
     console.log(error);
     throw error;
   }
@@ -185,5 +235,6 @@ module.exports = {
   findOrCreateNode,
   updateNode,
   deleteNode,
-  saveRecipe
+  saveRecipe,
+  updateRecipe
 }

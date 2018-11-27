@@ -1,6 +1,6 @@
 const express = require('express');
 const { findAllNodes, findNode, findRelationships, Models, Relationships, saveRecipe, deleteNode,
-  findConditionalNodes, createRelationship } = require('../db')
+  findConditionalNodes, createRelationship, updateRecipe } = require('../db')
 const router = express.Router();
 
 router.get('/:id', (req, res, next) => { 
@@ -51,6 +51,15 @@ router.put('/:id/review/:userId', (req, res, next) => {
     { rating, description }
   ).then(() => res.redirect(303, `/api/recipes/${req.params.id}`))
   .catch(next);
+});
+
+router.put('/:id', (req, res, next) => { 
+  const { name, instructions, categoryName, cuisineName, ingredients, imageUrl, videoUrl } = req.body;
+  const id = req.params.id;
+
+  updateRecipe(id, categoryName, cuisineName, ingredients, {name, instructions, imageUrl, videoUrl})
+    .then(() => res.redirect(303, `/api/recipes/${id}`))
+    .catch(next)
 });
 
 router.post('/', (req, res, next) => { 
