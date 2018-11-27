@@ -13,7 +13,7 @@ describe('Recipes Routes - /api/recipes/', () => {
       await createNode(Models.Ingredient, { name: 'Salt' });
       await createNode(Models.Category, { name: 'Lunch' });
       await createNode(Models.Cuisine, { name: 'Indian' });
-      await createNode(Models.User, { name: 'Test User', userName: 'test', password: 'test', email: 'test@email.com' });
+      await createNode(Models.User, { name: 'Test User', userName: 'test', password: 'test', email: 'test@email.com', isAdmin: true });
       await createNode(Models.Recipe, { name: 'Chicken Test Recipe', instructions:  'Blah Blah Instructions' });
       await Promise.all([
         createRelationship({ model: Models.Recipe, params: { name: 'Chicken Test Recipe' } },

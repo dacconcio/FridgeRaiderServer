@@ -17,7 +17,7 @@ router.get('/:id', (req, res, next) => {
   findNode(Models.User, {id: req.params.id })
   findNode(Models.User, { id: req.params.id })
     .then(user => {
-      result = user;
+      result = {...user, password: undefined };
       return Promise.all([
         findRelationships(Models.User, `n.id='${result.id}'`, Relationships.HAS_SAVED, 'direction_out', Models.Recipe),
         findRelationships(Models.User, `n.id='${result.id}'`, Relationships.HAS_POSTED, 'direction_out', Models.Recipe),
@@ -29,36 +29,21 @@ router.get('/:id', (req, res, next) => {
 });
 
 router.post('/firebase-auth/', async (req, res, next) => {
-
   try {
     const decodedToken = await admin.auth().verifyIdToken(req.body.idToken);
-
     if (!decodedToken.email) {
       return res.sendStatus(401);
     }
-
     let result;
     const user = await findNode(Models.User, { email: decodedToken.email });
     if (!user) {
       return res.send({});
     }
-
-    result = user;
-    const savedRecipes = await findRelationships(Models.User,
-      `n.id='${result.id}'`,
-      Relationships.HAS_SAVED,
-      'direction_out',
-      Models.Recipe
-    );
-
-    const postedRecipes = await findRelationships(
-      Models.User,
-      `n.id='${result.id}'`,
-      Relationships.HAS_POSTED,
-      'direction_out',
-      Models.Recipe
-    );
-
+    result = {...user, password: undefined };
+    const savedRecipes = await findRelationships(Models.User, `n.id='${result.id}'`, 
+      Relationships.HAS_SAVED, 'direction_out', Models.Recipe);
+    const postedRecipes = await findRelationships(Models.User, `n.id='${result.id}'`,
+      Relationships.HAS_POSTED, 'direction_out', Models.Recipe);
     result = { ...result, savedRecipes, postedRecipes };
     res.send(result);
   } catch (err) {
@@ -68,13 +53,14 @@ router.post('/firebase-auth/', async (req, res, next) => {
 
 router.get('/', (req, res, next) => {
   findAllNodes(Models.User)
+    .then(response => response.map(user => ({...user, password: undefined})))
     .then(users => res.send(users))
     .catch(next);
 });
 
 router.post('/', (req, res, next) => {
-  const { name, userName, password, email } = req.body;
-  createNode(Models.User, { name, userName, password, email })
+  const { name, userName, password, email, isAdmin } = req.body;
+  createNode(Models.User, { name, userName, password, email, isAdmin })
     .then(() => findNode(Models.User, { userName }))
     .then(response => res.redirect(`/api/users/${response.id}`))
     .catch(next);

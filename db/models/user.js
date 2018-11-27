@@ -34,6 +34,11 @@ module.exports = {
     required: true,
     default: true,
   },
+  isAdmin: {
+    type: 'boolean',
+    default: false,
+    required: true,
+  },
   hasSaved: {
     type: 'relationship',
     relationship: 'HAS_SAVED',
