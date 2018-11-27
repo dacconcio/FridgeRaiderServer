@@ -22,5 +22,4 @@ module.exports = {
     direction: 'out',
     target: Models.IngredientType,
   },
-  //Ingredient is contained in recipe?
 };

@@ -1,5 +1,5 @@
 const express = require('express');
-const { findAllNodes, Models } = require('../db')
+const { findAllNodes, findNode, updateNode, createNode, Models } = require('../db')
 const router = express.Router();
 
 router.get('/', (req, res, next) => { 
@@ -8,6 +8,30 @@ router.get('/', (req, res, next) => {
     .then(categories => res.send(categories))
     .catch(next);
 
+});
+
+router.get('/:id', (req, res, next) => { 
+
+  findNode(Models.Category, { id: req.params.id })
+    .then(category => res.send(category))
+    .catch(next);
+
+});
+
+router.put('/:id', (req, res, next) => { 
+
+  updateNode(Models.Category, {id: req.params.id}, req.body)
+    .then(() => res.redirect(303, `/api/categories/${req.params.id}`))
+    .catch(next);
+
+});
+
+router.post('/', (req, res, next) => { 
+  const { name } = req.body;
+  createNode(Models.Category, { name })
+    .then(() => findNode(Models.Category, { name }))
+    .then((response) => res.redirect(`/api/categories/${response.id}`))
+    .catch(next);
 });
 
 module.exports = router;

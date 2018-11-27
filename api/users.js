@@ -4,25 +4,18 @@ const { findAllNodes, findNode, findRelationships, createRelationship, deleteRel
 const router = express.Router();
 
 router.get('/:id', (req, res, next) => { 
-
   let result;
   findNode(Models.User, {id: req.params.id })
     .then(user => {
       result = user;
-      return findRelationships(Models.User, `n.id='${result.id}'`, Relationships.HAS_SAVED, 'direction_out', Models.Recipe)
-    })
-    .then(savedRecipes => {
-      result = {...result, savedRecipes}
-    })
-    .then(() => {
-      return findRelationships(Models.User, `n.id='${result.id}'`, Relationships.HAS_POSTED, 'direction_out', Models.Recipe)
-    })
-    .then(postedRecipes => {
-      result = {...result, postedRecipes}
-    })
-    .then(() => res.send(result))
-    .catch(next);
-
+      return Promise.all([
+        findRelationships(Models.User, `n.id='${result.id}'`, Relationships.HAS_SAVED, 'direction_out', Models.Recipe),
+        findRelationships(Models.User, `n.id='${result.id}'`, Relationships.HAS_POSTED, 'direction_out', Models.Recipe),
+      ])
+    }).then(([savedRecipes, postedRecipes]) => {
+      result = { ...result, savedRecipes, postedRecipes };
+      res.send(result)
+    }).catch(next);
 });
 
 router.get('/', (req, res, next) => { 
