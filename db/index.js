@@ -1,7 +1,7 @@
 const { Models, Relationships, Properties } = require('./models/constants');
 const conn = require('./conn');
 const { sync, seed } = require('./seed');
-const { findNode, findAllNodes, findRelationships, createRelationship, saveRecipe,
+const { findNode, findAllNodes, findRelationships, createRelationship, saveRecipe, deleteNode,
   deleteRelationship, findConditionalNodes, createNode, updateNode, findOrCreateNode } = require('./utils');
 
 module.exports = {
@@ -16,6 +16,7 @@ module.exports = {
   createNode,
   findOrCreateNode,
   updateNode,
+  deleteNode,
   saveRecipe,
   Models,
   Relationships,

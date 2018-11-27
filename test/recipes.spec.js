@@ -60,6 +60,14 @@ describe('Recipes Routes - /api/recipes/', () => {
       })
   });
 
+  it('Deletes recipe by id', () => {
+    return findNode(Models.Recipe, { name: 'Chicken Test Recipe' })
+      .then(recipe => {
+        return app.delete(`/api/recipes/${recipe.id}`)
+          .expect(204)
+      });
+  });
+
   it('Creates recipe', () => {
     return findNode(Models.User, { userName: 'test' })
       .then(user => {

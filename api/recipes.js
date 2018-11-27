@@ -1,5 +1,5 @@
 const express = require('express');
-const { findAllNodes, findNode, findRelationships, Models, Relationships, saveRecipe,
+const { findAllNodes, findNode, findRelationships, Models, Relationships, saveRecipe, deleteNode,
   findConditionalNodes, createRelationship } = require('../db')
 const router = express.Router();
 
@@ -61,6 +61,12 @@ router.post('/', (req, res, next) => {
   saveRecipe({ name, instructions, postedByUserId, categoryName, cuisineName, ingredients, imageUrl, videoUrl})
     .then(id => res.redirect(`/api/recipes/${id}`))
     .catch(next)
+});
+
+router.delete("/:id", (req, res, next) => {
+  deleteNode(Models.Recipe, {id: req.params.id })
+    .then(() => res.sendStatus(204))
+    .catch(next);
 });
 
 module.exports = router;

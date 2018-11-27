@@ -43,6 +43,11 @@ const updateNode = (model, params, properties) => {
     .then(node => node.update(properties));
 }
 
+const deleteNode = (model, params) => {
+  return neode.first(model, params)
+    .then(node => node.delete());
+}
+
 const findConditionalNodes = (model, params, relation, direction, target) => { 
 
   return neode.query()
@@ -179,5 +184,6 @@ module.exports = {
   createNode,
   findOrCreateNode,
   updateNode,
+  deleteNode,
   saveRecipe
 }
