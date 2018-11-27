@@ -60,13 +60,31 @@ describe('Recipes Routes - /api/recipes/', () => {
       })
   });
 
+  it('Deletes recipe by id', () => {
+    return findNode(Models.Recipe, { name: 'Chicken Test Recipe' })
+      .then(recipe => {
+        return app.delete(`/api/recipes/${recipe.id}`)
+          .expect(204)
+      });
+  });
+
+  it('Updates recipe for given Id', () => {
+    return findNode(Models.Recipe, { name: 'Chicken Test Recipe' })
+      .then(recipe => {
+        return app.put(`/api/recipes/${recipe.id}`)
+          .send({ instructions: 'Test Instructions Updated'})
+          .expect(303)
+      })
+  });
+
   it('Creates recipe', () => {
     return findNode(Models.User, { userName: 'test' })
       .then(user => {
         return app.post('/api/recipes/')
-          .send({ name: "Test Recipe", instructions: "Test Instructions", postedByUserId: user.id, 
-            categoryName: "Lunch", cuisineName: "Indian", ingredients: "2 lb Chicken\n2 tsp Salt" })
+          .send({ name: 'Test Recipe', instructions: 'Test Instructions', postedByUserId: user.id, 
+            categoryName: 'Lunch', cuisineName: 'Indian', ingredients: '2 lb Chicken\n2 tsp Salt' })
           .expect(302)
       })
   });
+
 });

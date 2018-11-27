@@ -30,6 +30,7 @@ module.exports = {
     relationship: 'POSTED_BY',
     direction: 'out',
     target: Models.User,
+    cascade: 'detach',
   },
   reviewedBy: {
     type: 'relationship',
@@ -46,24 +47,28 @@ module.exports = {
         required: true,
       },
     },
+    cascade: 'detach',
   },
   isOfCategory: {
     type: 'relationship',
     relationship: 'IS_OF_CATEGORY',
     direction: 'out',
     target: Models.Category,
+    cascade: 'detach',
   },
   isOfCuisine: {
     type: 'relationship',
     relationship: 'IS_OF_CUISINE',
     direction: 'out',
     target: Models.Cuisine,
+    cascade: 'detach',
   },
   hasIngredient: {
     type: 'relationship',
     relationship: 'HAS_INGREDIENT',
     direction: 'out',
     target: Models.Ingredient,
+    cascade: 'detach',
     properties: {
       measure: {
         type: 'string',

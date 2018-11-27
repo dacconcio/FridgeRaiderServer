@@ -1,6 +1,6 @@
 const express = require('express');
-const { findAllNodes, findNode, findRelationships, Models, Relationships, saveRecipe,
-  findConditionalNodes, createRelationship } = require('../db')
+const { findAllNodes, findNode, findRelationships, Models, Relationships, saveRecipe, deleteNode,
+  findConditionalNodes, createRelationship, updateRecipe } = require('../db')
 const router = express.Router();
 
 router.get('/:id', (req, res, next) => { 
@@ -53,6 +53,15 @@ router.put('/:id/review/:userId', (req, res, next) => {
   .catch(next);
 });
 
+router.put('/:id', (req, res, next) => { 
+  const { name, instructions, categoryName, cuisineName, ingredients, imageUrl, videoUrl } = req.body;
+  const id = req.params.id;
+
+  updateRecipe(id, categoryName, cuisineName, ingredients, {name, instructions, imageUrl, videoUrl})
+    .then(() => res.redirect(303, `/api/recipes/${id}`))
+    .catch(next)
+});
+
 router.post('/', (req, res, next) => { 
   const { name, instructions, postedByUserId, categoryName, cuisineName, ingredients } = req.body;
   const imageUrl = req.body.imageUrl ? req.body.imageUrl : '';
@@ -61,6 +70,12 @@ router.post('/', (req, res, next) => {
   saveRecipe({ name, instructions, postedByUserId, categoryName, cuisineName, ingredients, imageUrl, videoUrl})
     .then(id => res.redirect(`/api/recipes/${id}`))
     .catch(next)
+});
+
+router.delete("/:id", (req, res, next) => {
+  deleteNode(Models.Recipe, {id: req.params.id })
+    .then(() => res.sendStatus(204))
+    .catch(next);
 });
 
 module.exports = router;
