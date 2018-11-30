@@ -3,8 +3,6 @@ const { findAllNodes, findNode, findRelationships, Models, Relationships, saveRe
   findConditionalNodes, createRelationship, updateRecipe } = require('../db')
 const router = express.Router();
 
-const neode = require('../db/conn')
-
 router.get('/:id', (req, res, next) => { 
   let result;
   findNode(Models.Recipe, {id: req.params.id })
@@ -38,7 +36,6 @@ router.get('/', async (req, res, next) => {
     } else {
       recipes = await findAllNodes(Models.Recipe)
     }
-    console.log('RECIPE RES SEND ', recipes)
     res.send(recipes);
   } 
   catch(error) {
