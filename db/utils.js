@@ -49,13 +49,14 @@ const deleteNode = (model, params) => {
 }
 
 const findConditionalNodes = (model, params, relation, direction, target) => { 
-
   return neode.query()
     .match('n', model)
     .relationship(relation, direction, 'r')
     .to('t', target)
     .where(params)
-    .return('properties (n) as result')
+    .with('n, count(distinct t) as cnt')
+    .where('cnt >= 1')
+    .return('properties (n) as result order by cnt desc')
     .execute()
     .then(data => data.records)
     .then(result => {
