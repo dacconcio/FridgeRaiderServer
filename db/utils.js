@@ -54,16 +54,28 @@ const findConditionalNodes = (model, params, relation, direction, target) => {
     .relationship(relation, direction, 'r')
     .to('t', target)
     .where(params)
-    .with('n, count(distinct t) as cnt')
+    .with('n', 't')
+    .match('(n) - [:HAS_INGREDIENT] -> (ings:Ingredient)')
+    .with('n', 't', 'collect(ings.name) as ingList')
+    .match('(cat:Category) <- [:IS_OF_CATEGORY] - (n) - [:IS_OF_CUISINE] -> (cui:Cuisine)')
+    .with('n, cui, cat, ingList, count(distinct t) as cnt')
     .where('cnt >= 1')
-    .return('properties (n) as result order by cnt desc')
+    .return('properties (n) as result, properties (cui) as cuisine, properties (cat) as category, ingList order by cnt desc')
     .execute()
     .then(data => data.records)
     .then(result => {
+      console.log(result)
       let response = [];
       if(result.length) {
-        response = result.map(element => element.toObject()['result'])
+        response = result.map(element => {
+          const recipe = element.toObject()['result']
+          recipe['cuisine'] = element.toObject()['cuisine']['name']
+          recipe['category'] = element.toObject()['category']['name']
+          recipe['ingredients'] = element.toObject()['ingList']
+          return recipe
+        })
       }
+      console.log(response)
       return response;
     });
 }
