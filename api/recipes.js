@@ -69,7 +69,7 @@ router.post('/', (req, res, next) => {
   const videoUrl = req.body.videoUrl ? req.body.videoUrl : '';
   
   saveRecipe({ name, instructions, postedByUserId, categoryName, cuisineName, ingredients, imageUrl, videoUrl})
-    .then(id => res.redirect(`/api/recipes/${id}`))
+    .then(id => res.redirect(`/api/users/${postedByUserId}`))
     .catch(next)
 });
 
