@@ -100,13 +100,13 @@ const createRecipe = async(recipe, postedByUser, review, reviewedBy) => {
   await createdRecipe.relateTo(cuisine, Relationships.isOfCuisine);
 
   for(let i = 0; i < recipe.ingredients.length; i++) {
-    let ingredient = await neode.first(Models.Ingredient, Properties.name, recipe.ingredients[i].name);
+    let ingredient = await neode.first(Models.Ingredient, Properties.name, recipe.ingredients[i].name.toLowerCase());
     if(ingredient) {
       const measure = recipe.ingredients[i].measure ? recipe.ingredients[i].measure : '';
       await createdRecipe.relateTo(ingredient, Relationships.hasIngredient, { measure });
     }
     else {
-      console.log(`Ingredient Not Found: ${recipe.ingredients[i].name}`)
+      console.log(`Ingredient Not Found: ${recipe.ingredients[i].name.toLowerCase()}`)
     }
   }
 }
