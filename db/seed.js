@@ -48,7 +48,7 @@ const seed = async () => {
     const ingredients = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'json/ingredientsAndTypes.json'))).ingredients;
     for(let i = 0; i < ingredients.length; i++) {
       const tags = ingredients[i].tags && ingredients[i].tags.length ? ingredients[i].tags : '';
-      ingredient = await neode.create(Models.Ingredient, { name: ingredients[i].name, tags });
+      ingredient = await neode.create(Models.Ingredient, { name: ingredients[i].name.toLowerCase(), tags });
       const type = ingredients[i].type ? ingredients[i].type : 'Unknown'
       let ingredientType = await neode.first(Models.IngredientType, Properties.name, type);
       if(!ingredientType) {
