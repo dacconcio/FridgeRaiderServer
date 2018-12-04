@@ -18,8 +18,12 @@ router.get('/image', async (req, res, next) => {
     apiKey: process.env.CLARIFAI_KEY
    });
   try {
-    return clarifai.models.predict("bd367be194cf45149e75f01d59f77ba7", {base64: image})
+    var reader = new FileReader();
+    var url = reader.readAsDataURL(image);
+    reader.onloadend = () => {
+      return clarifai.models.predict("bd367be194cf45149e75f01d59f77ba7", {base64: reader.result.split('base64,')[1]})
       .then( ingredients => res.send(ingredients))
+    }
   } 
   catch(error) {
     next(error);
