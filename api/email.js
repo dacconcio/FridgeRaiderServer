@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const nodemailer = require('nodemailer');
-const { gmailAccount, gmailPassword } = require('../env')
+const { gmailAccount, gmailPassword } = require('../config'); 
 
 const transporter = nodemailer.createTransport({
   service: 'gmail',
