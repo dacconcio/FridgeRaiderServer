@@ -13,22 +13,25 @@ router.get('/', (req, res, next) => {
 
 });
 
-router.get('/image', async (req, res, next) => { 
+router.post('/image', async (req, res, next) => { 
   const { image } = req.query;
   const clarifai = new Clarifai.App({
     apiKey: process.env.CLARIFAI_KEY
    });
-  try {
-    var reader = new FileReader();
-    var url = reader.readAsDataURL(image);
-    reader.onloadend = () => {
-      return clarifai.models.predict("bd367be194cf45149e75f01d59f77ba7", {base64: reader.result.split('base64,')[1]})
-      .then( ingredients => res.send(ingredients))
+   form.parse(req, async (error, fields, files) => {
+    try {
+      const file = files.file[0].path;
+      var reader = new FileReader();
+      var url = reader.readAsDataURL(file);
+      reader.onloadend = () => {
+        return clarifai.models.predict("bd367be194cf45149e75f01d59f77ba7", {base64: reader.result.split('base64,')[1]})
+        .then( ingredients => res.send(ingredients))
+      }
+    } 
+    catch(error) {
+      next(error);
     }
-  } 
-  catch(error) {
-    next(error);
-  }
+  })
 });
 
 router.get('/:id', (req, res, next) => { 
