@@ -3,6 +3,7 @@ const { findAllNodes, findNode, updateNode, Models } = require('../db')
 const router = express.Router();
 const Clarifai = require('clarifai')
 const config = require('../config')
+const FileReader = require('filereader')
 
 router.get('/', (req, res, next) => { 
 
