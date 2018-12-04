@@ -2,7 +2,7 @@ const express = require('express');
 const { findAllNodes, findNode, updateNode, Models } = require('../db')
 const router = express.Router();
 const Clarifai = require('clarifai')
-const config = require('./config')
+const config = require('../config')
 
 router.get('/', (req, res, next) => { 
 
