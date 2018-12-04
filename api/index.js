@@ -7,5 +7,6 @@ router.use('/recipes', require('./recipes'));
 router.use('/categories', require('./categories'));
 router.use('/cuisine', require('./cuisine'));
 router.use('/users', require('./users'));
+router.use('/email', require('./email'));
 
 module.exports = router;
