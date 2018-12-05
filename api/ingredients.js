@@ -21,13 +21,13 @@ router.post('/image', async (req, res, next) => {
    const form = new multiparty.Form();
    form.parse(req, async (error, fields, files) => {
     try {
-      const file = files.file[0].path;
-      var reader = new FileReader();
-      var url = reader.readAsDataURL(file);
-      reader.onloadend = () => {
-        return clarifai.models.predict("bd367be194cf45149e75f01d59f77ba7", {base64: reader.result.split('base64,')[1]})
+      // const file = files.file[0];
+      // var reader = new FileReader();
+      // var url = reader.readAsDataURL(file);
+      // reader.onloadend = () => {
+        return clarifai.models.predict("bd367be194cf45149e75f01d59f77ba7", files.file[0].path)
         .then( ingredients => res.send(ingredients))
-      }
+      // }
     } 
     catch(error) {
       next(error);
