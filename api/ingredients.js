@@ -4,6 +4,7 @@ const router = express.Router();
 const Clarifai = require('clarifai')
 const config = require('../config')
 const FileReader = require('filereader')
+const multiparty = require('multiparty');
 
 router.get('/', (req, res, next) => { 
 
@@ -14,10 +15,10 @@ router.get('/', (req, res, next) => {
 });
 
 router.post('/image', async (req, res, next) => { 
-  const { image } = req.query;
   const clarifai = new Clarifai.App({
     apiKey: process.env.CLARIFAI_KEY
    });
+   const form = new multiparty.Form();
    form.parse(req, async (error, fields, files) => {
     try {
       const file = files.file[0].path;
