@@ -8,3 +8,9 @@ Our goal was to create a fully featured site using the Neo4J graph database. Use
 favorite recipes, write reviews, submit new recipes, and share recipes on social media.
 
 This repo contains the backend of the site. 
+
+
+
+![Picture of Recipe Page](/recipe-page-pic.jpeg?raw=true "Recipe Results")
+
+![Picture of Recipe Detail Page](/recipe-detail-page.png?raw=true "Recipe Detail Page")
