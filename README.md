@@ -9,6 +9,8 @@ favorite recipes, write reviews, submit new recipes, and share recipes on social
 
 This repo contains the backend of the site. 
 
+Instructions: clone this repo, and npm install. Then run npm run start:dev. You will also need to create and run a database with Neo4Js desktop client.  
+
 
 
 ![Picture of Recipe Page](/recipe-page-pic.jpeg?raw=true "Recipe Results")
